@@ -52,6 +52,7 @@ const sinkSc= document.getElementsByClassName('sink')[0];							//html:line:12
 const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 
 sinkSc.classList.add('sinkSc');
+IshoutenSc.classList.add('ishoutenSc');
 
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;

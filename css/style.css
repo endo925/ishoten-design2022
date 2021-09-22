@@ -25,7 +25,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 /*背景 html:line:20~22*/
 #img{
 	position: absolute;
-	background-image: url("image/vi_picture.png");
+	background-image: url("image/メインビジュアル_RGB.png");
 	opacity: 0.6;
 	background-size: cover;
 	background-repeat: no-repeat;

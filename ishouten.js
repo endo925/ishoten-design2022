@@ -1,4 +1,4 @@
-// JavaScript Document
+// JavaScript Documenttttttt
 const noScroll=(e)=>{e.preventDefault();}//スクロール禁止
 const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: false });}
 noSc();

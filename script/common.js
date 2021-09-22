@@ -14,8 +14,9 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 
 
 const log0 = document.getElementById('log0');//html:line:15
+let log0_text = log0.textContent;
 let count = 100;
-let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
+let countDown=()=>{log0_text =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
 	//50m秒ごとに繰り返し
@@ -51,7 +52,9 @@ const sinkSc= document.getElementsByClassName('sink')[0];							//html:line:12
 const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 
 
-document.getElementById("z-index1").style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
+const z-index1 = document.getElementById("z-index1");
+const z1_style = z-index1.style;
+const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 //what左寄せ
 const W = document.documentElement.clientWidth;	//表示画面のwidth取得
 const what = document.getElementById('what');	//html:line:43

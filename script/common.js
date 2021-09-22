@@ -12,10 +12,8 @@ const test=()=>{
 }
 const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: false });}//スクロール禁止を消す関数
 
-
-const log0 = document.getElementById('log0');//html:line:15
 let count = 100;
-let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
+let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
 	//50m秒ごとに繰り返し

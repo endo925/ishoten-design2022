@@ -46,7 +46,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #menu2{z-index: 6;}/*略*/
 
 /*意匠展ロゴ html:line:25*/
-.ishouten img{height: 250px;width: 400px;}
+.ishouten img{width: 400px;}
 .ishouten{
 	font-size: 3.0em;
 	position: absolute;

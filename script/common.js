@@ -14,7 +14,7 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 
 
 const log0 = document.getElementById('log0');//html:line:15
-let log0_text = log0.textContent;
+const log0_text = log0.textContent;
 let count = 100;
 let countDown=()=>{log0_text =-count--;}//-100からカウントダウン
 //ロードされたら実行

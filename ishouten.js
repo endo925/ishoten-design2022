@@ -1,4 +1,4 @@
-// JavaScript Documenttttttt
+// JavaScript Document
 const noScroll=(e)=>{e.preventDefault();}//スクロール禁止
 const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: false });}
 noSc();
@@ -115,7 +115,7 @@ for (let i = 0; i < elemsA.length; i++){
 		if (z_index11) {
 			e.preventDefault();
 			e.stopPropagation();			
-			// スクロール先の要素の位置を取得
+			// スクロール先の位置を取得
 			var targetPosition = ichi[i];
 			// スタート時点の時間を取得
 			var startTime = performance.now();	
@@ -143,15 +143,6 @@ for (let i = 0; i < elemsA.length; i++){
 }
 
 
-//const sectionCl=()=>{
-//	
-//}
-//for (let i = 0; i < elemsA.length; i++){
-//	elemsA[i].addEventListener('click',sectionCl);
-//}
-
-
-
 z_index5.style.display = 'none';
 z_index11.style.display = 'none';
 z_index6.style.display = 'none';
@@ -159,12 +150,12 @@ z_index10.style.display = 'none';
 z_index1.style.opacity = 0.5;
 
 
-const log = document.getElementById('log');//scroll:0
+const log = document.getElementById('log');	//scroll:0
 
 //スクロールされた時に実行
 window.addEventListener('scroll',()=>{
-	let scrollTop = document.scrollingElement.scrollTop;//スクロール量取得
-	log0.textContent = scrollTop;//文字起こし
+	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
+	log0.textContent = scrollTop;	//文字起こし
 	
 	
 	//意匠展
@@ -193,17 +184,16 @@ window.addEventListener('scroll',()=>{
 			z_index11.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index11.style.filter = "blur("+xd+"px)";
 		}//150pxは動かない
-		else if(scrollTop>=150,scrollTop<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/100拡大
+		else if(scrollTop>=150,scrollTop<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/1000拡大
 		else if(scrollTop>=250,scrollTop<800){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
 			x = (scrollTop-700)*0.01;
 			z_index11.style.transform = "scale( "+x+" , "+x+" )";
 			z_index11.style.filter = "blur("+2*x+"px)";
-		}//スクロール量の1/100拡大
+		}
 	}
 	else{z_index11.style.display = 'none';}//コンセプト消す
 
-	
 	//menu
 	let x2 = (scrollTop+750)*0.001;
 	z_index10.style.opacity =1;
@@ -240,22 +230,22 @@ window.addEventListener('scroll',()=>{
 		z_index5.style.display = '';
 		if(scrollTopW<150){
 			z_index5.style.opacity =scrollTopW/500;
-			z_index5.style.transform = "scale( "+0.5+" , "+0.5+" )";
+			z_index5.style.transform = "scale( "+0.5+" , "+0.5+" )"; //半分の大きさからスタート
 			z_index5.style.filter = "blur("+yd+"px)";
 		}//150pxは動かない
 		else if(scrollTopW>=150,scrollTopW<650){
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 			z_index5.style.opacity =scrollTopW/500;
 			z_index5.style.filter = "blur("+yd+"px)";
-		}//スクロール量の1/100拡大
+		}
 		else if(scrollTopW>=650,scrollTopW<1200){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
 			y = (scrollTopW-1100)*0.01;
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 			z_index5.style.filter = "blur("+2*y+"px)";
-		}//スクロール量の1/100拡大
+		}
 	}
-	else{z_index5.style.display = 'none';}//コンセプト消す
+	else{z_index5.style.display = 'none';}
 	
 	//menu2
 	let y2 = (scrollTopW+350)*0.001;
@@ -276,21 +266,21 @@ window.addEventListener('scroll',()=>{
 
 	
 	
-	//scroll
-	const M = document.getElementById("M");
-	const scroll=()=>{window.scrollBy(0, 1);}
+	//意匠展とか開催概要が出てくる
+	const M = document.getElementById("M");		//html:line:13
+	const scroll=()=>{window.scrollBy(0, 1);} 	//y軸1ずつ自動スクロール
 	
 	if(scrollTop>1900){
-		z_index1.classList.add('ishoutenS');
-		var rep = setTimeout(scroll,0);
+		z_index1.classList.add('ishoutenS');	//css:line:59
+		var rep = setTimeout(scroll,0);		//0m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
-			log.classList.add('log2');
+			log.classList.add('log2');		//css:line:89
 			log0.textContent = 2022;
-			M.classList.add("depout");
+			M.classList.add("depout");		//css:line:103
 		}
 		if(scrollTop>2250){
-			z_index0.classList.add('infoS');
-			clearTimeout(rep);
+			z_index0.classList.add('infoS');	//css:line:74
+			clearTimeout(rep);			//自動スクロール停止
 		}
 	}
 	else{
@@ -300,14 +290,14 @@ window.addEventListener('scroll',()=>{
 		M.classList.remove("depout");
 	}
 
-
+	//最後の画面でposition:fixedを消して下にスクロールできるようにする
 	if(scrollTop>3200){
-		ImgPa.classList.remove('imgSc');
-		Img.classList.remove('imgSc');
-		IshoutenSc.classList.remove('ishoutenSc');
-		InfoSc.classList.remove('infoSc');
-		sinkSc.classList.remove('sinkSc');
-		menu2Sc.classList.remove('menu2Sc');
+		ImgPa.classList.remove('imgSc');			//css:line:38
+		Img.classList.remove('imgSc');				//css:line:37
+		IshoutenSc.classList.remove('ishoutenSc');	//css:line:60
+		InfoSc.classList.remove('infoSc');			//css:line:75
+		sinkSc.classList.remove('sinkSc');			//css:line:90
+		menu2Sc.classList.remove('menu2Sc');		//css:line:131
 	}
 	else{
 		ImgPa.classList.add('imgSc');
@@ -320,6 +310,5 @@ window.addEventListener('scroll',()=>{
 
 	
 },false);
-
 
 

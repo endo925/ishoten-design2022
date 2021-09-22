@@ -14,9 +14,8 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 
 
 const log0 = document.getElementById('log0');//html:line:15
-const log0_text = log0.textContent;
 let count = 100;
-let countDown=()=>{log0_text =-count--;}//-100からカウントダウン
+let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
 	//50m秒ごとに繰り返し

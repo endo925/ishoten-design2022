@@ -1,6 +1,5 @@
 // JavaScript Document
 'use strict';
-var bodyNode = document.getElementsByTagName('body').item(0);
 const noScroll=(e)=>{e.preventDefault();}//スクロール禁止
 const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: false });}
 noSc();

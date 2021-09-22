@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ishouten</title>
+	<link rel="stylesheet" href="ishouten.css">
+</head>
+<body>
+	<div id="load"></div><!--黒いロード画面-->
+	
+	<!--depth -100 m -->
+	<div id="log" class="sink">
+		<div id="M">
+			<h1 class="depth">depth&nbsp;&nbsp;&nbsp;&nbsp;:</h1>
+			<h2 id="log0" class="depth">-100</h2>
+			<h1 class="depth">m</h1>
+		</div>
+	</div>
+	
+	<div id="imgPa" class="imgSc"><!--背景画像-->
+		<div id="img" class="imgSc"></div>
+	</div>
+	
+	<div id="input"><!--ロード中消すやつ囲ってる-->
+		<div id="z-index1" class="ishouten"><img src="image/意匠展_ロゴ_白横.png" alt="LOGO"></div>
+		
+		<div id="z-index0" class="info">
+			<h1>千葉大学工学部総合工学科デザインコース　卒業研究・制作展</h1>
+			<h1>2022.3.10 - 3.13</h1>
+			<h1>11:00 - 19:00</h1>
+			<h1>千葉大学隅田サテライトキャンパス</h1>
+		</div>
+		
+		<div id="z-index11" class="layer conceptL"><!--コンセプト-->
+			<div id="concept">
+				<p class="s1">concept</p>
+  				<p class="s2">創作の始まりはいつだって、強い想いだ。<br>表面から見えるのは、ほんの僅か。<br>創作の奥底、想いに触れよう。</p>
+				<p class="side"><img src="image/潜る_ロゴ_ 白.png" alt="MOGURU"></p>
+			</div>
+		</div>
+		
+		<div id="z-index5" class="layer"><!--what-->
+			<div id="what">
+				<p class="s1">what</p>
+  				<p class="s2">2021年度千葉大学工学部総合工学科デザインコース<br>卒業生による卒業研究・制作展<br>専門分野に特化した14の研究室に分かれ、<br>各々が独自の視点からデザインの課題を探索し、<br>研究や制作に打ち込んだ<br>互いに影響し合って成長した等身大の私たちを是非ご覧ください</p>
+				<p class="side"><img src="image/意匠展_ロゴ_白縦.png" alt="ISHOU"></p>
+			</div>
+		</div>
+		
+		<div id="menu" class="layer"><!--コンセプトと一緒に出てくるメニュー-->
+			<div class="hamm"><img src="image/hamba3.png" alt="="></div>
+		</div>
+		<div id="menu2" class="layer layer2"><!--whatと一緒に出てくるメニュー-->
+			<div class="hamm hamm2"><img src="image/hamba3.png" alt="="></div>
+		</div>
+		
+    	<nav id="gnav"><!--メニュー押したら出てくるやつ-->
+    	    <div class="gnav__menu">
+				<div class="gnav__menu__item">
+    	        	<div id="conceptLink"><span>concept</span></div>
+    	        	<div id="whatLink"><span>what</span></div>
+    	        	<div id="infoLink"><span>info</span></div>
+				</div>
+    	    </div>
+    	</nav>
+	</div>
+
+</body>
+<script type="text/javascript" src="ishouten.js"></script>
+</html>

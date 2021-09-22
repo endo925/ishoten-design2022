@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {margin:0; padding:0; width: 100%; height: 100%;}
+
+body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"}
+#input{display: none;}	/*ロード前は消す*/
+/*ロード画面*/
+*{color: aliceblue;}	/*白文字*/
+#load{
+	visibility: visible;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 12;
+	background-color:#000000;
+	transition: ease 3s;
+	pointer-events: none;
+	opacity: 1;
+}
+#load.fade{		/*js:line:7*/
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*背景 html:line:20~22*/
+#img{
+	position: absolute;
+	background-image: url("image/メインビジュアル_RGB.png");
+	opacity: 0.6;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 1200px;				/*vi 縦長*/
+}
+#imgPa{padding-top: 3200px;}	/*背景画像を一番下に配置 css:line:37のfixedがなくなるとスクロールできる*/
+#img.imgSc{position: fixed;}	/*js:line:318で消す(3200pxスクロールしたら消える)*/
+#imgPa.imgSc{padding-top: 0px;}	/*js:line:317で消す(3200pxスクロールしたら消える)*/
+
+/*重ね順*/
+#z-index0{z-index: 0;}/*開始概要*/
+#z-index1{z-index: 1; filter: blur(8px);}/*意匠展ロゴ*/
+#z-index5{z-index: 5;}/*what*/
+#z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
+#menu{z-index: 10;}/*コンセプトについてるメニュー*/
+#menu2{z-index: 6;}/*略*/
+
+/*意匠展ロゴ html:line:25*/
+.ishouten img{height: 250px;width: 400px;}
+.ishouten{
+	font-size: 3.0em;
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	width: 100%;
+	padding-top: 3200px;		/*背景画像を一番下に配置 css:line:59~62のfixedがなくなるとスクロールできる*/
+}
+.ishouten img{transition: ease 2.0s;}	/*2秒かけて動く*/
+.ishoutenS img{transform: translateY(-50px)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
+.ishouten.ishoutenSc{	/*js:line:319で消す(3200pxスクロールしたら消える)*/
+	padding-top: 0px;
+	position: fixed;}
+
+/*開催概要 html:line:27~32*/
+.info{
+	position: absolute;
+	text-align: center;
+	top: 85%;
+	left: 30%;
+	font-size: 0.5em;
+	padding-top: 3200px;
+}
+.info h1{transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
+.infoS h1{transform: translate(0px,-100px); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
+.info.infoSc{	/*js:line:320*/
+	padding-top: 0px;
+	position: fixed;}
+
+/*深さdepth:0m html:line:12~18*/
+#log{z-index: 13;}
+.sink{
+	position: absolute;
+	text-align: center;
+	left: 37.5%;
+	top: 660px;
+	padding-top: 3200px;
+}
+.sink div{transition: ease 2.0s;}
+.log2 div{transform: translateY(-200px)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
+.sink.sinkSc{	/*js:line:320*/
+	padding-top: 0px;
+	position: fixed;}
+
+#log0{margin-right: 80px;letter-spacing: 5px;}
+/*'depth'と'm'*/
+.depth{
+	font-size: 1.5em;
+	display: inline-block;
+	opacity: 1;
+	transition: ease 2s;
+	margin-right: 50px;
+}
+.depout h1{opacity:0;} 	/*js:line:301 2021pxスクロールで'depth'と'm'を消す*/
+
+
+
+
+
+/*拡大するやつconcept,what html:line:34~55*/
+.layer{
+	height: 100%;
+	position: relative;
+	position: fixed;
+	width: 100%;
+}
+/*ハンバーガーメニュー html:line:50~55*/
+#menu{width:540px;margin-left: 900px;}
+#menu2{width:540px;margin-right: 900px;}
+.hamm{
+	overflow: hidden;
+	text-align: center;
+	font-size: 3.0em;
+	margin: 380px 20px 0px 400px;
+	display: block;
+	cursor :pointer;
+}
+.hamm img{overflow: visible;width:140px;height: 55px;}
+.hamm2{margin: 380px 400px 0px 20px;}
+
+#menu2.layer2{position: absolute;}
+#menu2.layer2.menu2Sc{position: fixed;}
+
+#concept,#what{/*html:line:34~48*/
+	height: 100%;
+	width: 600px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%,-50%);
+/*	background-image: url("image/ノイズ 2.png");*/
+}
+/*#concept{    
+	background: -moz-linear-gradient(right,rgba(126, 132, 141, 0.7) , transparent);
+  background: -webkit-linear-gradient(right, rgba(126, 132, 141, 0.7), transparent);
+  background: linear-gradient(to left,rgba(126, 132, 141, 0.7), transparent);
+}
+#what{
+	transform: translate(-20%,-50%);
+	background: -moz-linear-gradient(rgba(126, 132, 141, 0.7) , transparent);
+  background: -webkit-linear-gradient(rgba(126, 132, 141, 0.7), transparent);
+  background: linear-gradient(rgba(126, 132, 141, 0.7) , transparent);
+}
+*/
+.s1{
+	padding-left: 80px;
+	font-size: 5.0em;
+	margin: 250px 0 0 50px;
+}
+
+.s2{padding-left: 80px;padding-top: 40px;margin: 0 25px 0 100px;line-height: 40px;letter-spacing: 4px;}
+
+.side{
+	writing-mode: vertical-rl;/*縦書き*/
+	position: absolute;
+	left: 0;
+	top: 40%;
+}
+.side img{padding-left: 30px;padding-top: 50px; width:120px;height:170px;}
+
+#what .s2{padding-left: 20px;writing-mode: vertical-rl;}
+#what .s1{margin-top: 50px;}
+#what .side{top:30%;padding-left: 300px;}
+
+
+/*ハンバーガーメニュー押したら出てくるやつ html:line57~*/
+#gnav{
+    position: fixed;
+	visibility: hidden;
+	pointer-events: none;
+    background: #2c303a;
+    height: 100%;
+    width: 100%;
+    z-index: 14;
+	transition: ease 1.4s;
+    opacity: 0;
+}
+#gnav.gnavS{ 	/*js:line:88、99でクリックされたら追加*/
+	overflow: hidden;
+	visibility: visible;
+    opacity: 0.98;
+}
+#conceptLink,#whatLink,#infoLink{
+	transform: scale(2,2);
+	filter: blur(15px);
+	transition: ease 1.0s;
+	display:block;
+}
+/*js:line:89~91、100~102で追加*/
+#conceptLink.conceptLinkS{transform: scale(1,1);filter: blur(0px);}
+#whatLink.whatLinkS{transform: scale(1,1);filter: blur(0px);transition-delay:.15s;}
+#infoLink.infoLinkS{transform: scale(1,1);filter: blur(0px);transition-delay:.3s;}
+
+.gnav__menu{
+	text-align: center;
+	margin: 100px;
+}
+.gnav__menu__item div{ 	/*文字の設定*/
+	width:65%;
+	display: none;
+	pointer-events: auto;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1em;
+	padding: 50px 0px 50px 0px;
+}
+.gnav__menu__itemS div{float: right;} 	/*js:line:92で消して103で追加*/
+/*ホバーしたら見える*/
+span{  
+	text-decoration: none;
+	color: #f4f6f7;
+	transition: ease .8s;
+	filter: blur(4px);
+	cursor :pointer;
+}
+span:hover {
+	filter: blur(0px);
+	transform: scale(1.04,1.01)
+}

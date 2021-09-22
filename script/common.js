@@ -52,8 +52,8 @@ const sinkSc= document.getElementsByClassName('sink')[0];							//html:line:12
 const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 
 
-const z-index1 = document.getElementById("z-index1");
-const z1_style = z-index1.style;
+const z1 = document.getElementById("z-index1");
+const z1_style = z1.style;
 const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 //what左寄せ
 const W = document.documentElement.clientWidth;	//表示画面のwidth取得

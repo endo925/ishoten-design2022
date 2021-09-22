@@ -149,8 +149,8 @@ z_index5.style.display = 'none';
 z_index11.style.display = 'none';
 z_index6.style.display = 'none';
 z_index10.style.display = 'none';
-z_index1.style.opacity = 0.5;
-
+z_index1.style.opacity = 0.3;
+z_index1.style.transform = "scale( "+0.3+" , "+0.3+" )"
 
 const log = document.getElementById('log');	//scroll:0
 

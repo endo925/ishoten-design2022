@@ -113,22 +113,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: fixed;
 	width: 100%;
 }
-/*ハンバーガーメニュー html:line:50~55*/
-#menu{width:540px;margin-left: 900px;}
-#menu2{width:540px;margin-right: 900px;}
-.hamm{
-	overflow: hidden;
-	text-align: center;
-	font-size: 3.0em;
-	margin: 380px 20px 0px 400px;
-	display: block;
-	cursor :pointer;
-}
-.hamm img{overflow: visible;width:140px;height: 55px;}
-.hamm2{margin: 380px 400px 0px 20px;}
+/*ハンバーガーメニュー html:line:50~55 亡くなった*/
 
-#menu2.layer2{position: absolute;}
-#menu2.layer2.menu2Sc{position: fixed;}
 
 #concept,#what{/*html:line:34~48*/
 	height: 100%;
@@ -160,57 +146,5 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #what .side{top:30%;padding-left: 300px;}
 
 
-/*ハンバーガーメニュー押したら出てくるやつ html:line57~*/
-#gnav{
-    position: fixed;
-	visibility: hidden;
-	pointer-events: none;
-    background: #2c303a;
-    height: 100%;
-    width: 100%;
-    z-index: 14;
-	transition: ease 1.4s;
-    opacity: 0;
-}
-#gnav.gnavS{ 	/*js:line:88、99でクリックされたら追加*/
-	overflow: hidden;
-	visibility: visible;
-    opacity: 0.98;
-}
-#conceptLink,#whatLink,#infoLink{
-	transform: scale(2,2);
-	filter: blur(15px);
-	transition: ease 1.0s;
-	display:block;
-}
-/*js:line:89~91、100~102で追加*/
-#conceptLink.conceptLinkS{transform: scale(1,1);filter: blur(0px);}
-#whatLink.whatLinkS{transform: scale(1,1);filter: blur(0px);transition-delay:.15s;}
-#infoLink.infoLinkS{transform: scale(1,1);filter: blur(0px);transition-delay:.3s;}
+/*ハンバーガーメニュー押したら出てくるやつ html:line57~* 消えた/
 
-.gnav__menu{
-	text-align: center;
-	margin: 100px;
-}
-.gnav__menu__item div{ 	/*文字の設定*/
-	width:65%;
-	display: none;
-	pointer-events: auto;
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1em;
-	padding: 50px 0px 50px 0px;
-}
-.gnav__menu__itemS div{float: right;} 	/*js:line:92で消して103で追加*/
-/*ホバーしたら見える*/
-span{  
-	text-decoration: none;
-	color: #f4f6f7;
-	transition: ease .8s;
-	filter: blur(4px);
-	cursor :pointer;
-}
-span:hover {
-	filter: blur(0px);
-	transform: scale(1.04,1.01)
-}

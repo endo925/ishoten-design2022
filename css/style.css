@@ -61,7 +61,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 
 /*開催概要 html:line:27~32*/
 .info{
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	top: 85%;
 	left: 30%;
@@ -70,9 +70,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 }
 .info h1{transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
 .infoS h1{transform: translate(0px,-100px); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
-.info.infoSc{	/*js:line:320*/
-	padding-top: 0px;
-	position: fixed;}
 
 /*深さdepth:0m html:line:12~18*/
 #log{z-index: 13;}

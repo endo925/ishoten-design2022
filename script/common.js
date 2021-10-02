@@ -37,14 +37,9 @@ const z_index0 = document.getElementById("z-index0");								//html:line:27
 
 const ImgPa=document.getElementById('imgPa');										//html:line:20
 const Img=document.getElementById('img');											//html:line:21
-const IshoutenSc= document.getElementsByClassName('ishouten')[0];					//html:line:25
-const InfoSc= document.getElementsByClassName('info')[0];							//html:line:27
-const sinkSc= document.getElementsByClassName('sink')[0];							//html:line:12
+
 const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 
-sinkSc.classList.add('sinkSc');				//css:line:90 js:line:300
-IshoutenSc.classList.add('ishoutenSc');			//css:line:60 js:line:298
-InfoSc.classList.add('infoSc');
 
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;

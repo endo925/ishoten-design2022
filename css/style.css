@@ -42,8 +42,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #z-index1{z-index: 1; filter: blur(8px);}/*意匠展ロゴ*/
 #z-index5{z-index: 5;}/*what*/
 #z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
-#menu{z-index: 10;}/*コンセプトについてるメニュー*/
-#menu2{z-index: 6;}/*略*/
 
 /*意匠展ロゴ html:line:25*/
 .ishouten img{width: 400px;}

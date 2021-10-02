@@ -136,20 +136,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: absolute;
 	top: 50%;
 	transform: translate(0%,-50%);
-/*	background-image: url("image/ノイズ 2.png");*/
-}
-/*#concept{    
-	background: -moz-linear-gradient(right,rgba(126, 132, 141, 0.7) , transparent);
-  background: -webkit-linear-gradient(right, rgba(126, 132, 141, 0.7), transparent);
-  background: linear-gradient(to left,rgba(126, 132, 141, 0.7), transparent);
-}
-#what{
-	transform: translate(-20%,-50%);
-	background: -moz-linear-gradient(rgba(126, 132, 141, 0.7) , transparent);
-  background: -webkit-linear-gradient(rgba(126, 132, 141, 0.7), transparent);
-  background: linear-gradient(rgba(126, 132, 141, 0.7) , transparent);
-}
-*/
+
+
 .s1{
 	padding-left: 80px;
 	font-size: 5.0em;

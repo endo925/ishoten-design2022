@@ -92,8 +92,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: fixed;}
 
 #log0{letter-spacing: 5px;}
-.sink h2{width: 60px;}
-.sink h1{width: 60px;}
+.sink h2{width: 200px;}
+.sink h1{width: 200px;}
 /*'depth'と'm'*/
 .depth{
 	font-size: 1.5em;

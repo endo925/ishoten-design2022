@@ -44,6 +44,7 @@ const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 
 sinkSc.classList.add('sinkSc');				//css:line:90 js:line:300
 IshoutenSc.classList.add('ishoutenSc');			//css:line:60 js:line:298
+InfoSc.classList.add('infoSc');
 
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;

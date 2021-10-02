@@ -33,14 +33,7 @@ window.onload =()=>{
 const z_index1 = document.getElementById("z-index1");								//html:line:25
 const z_index5 = document.getElementById("z-index5");								//html:line:42
 const z_index11 = document.getElementById("z-index11"); 							//html:line:34
-const z_index6 = document.getElementById("menu2");									//html:line:50
-const z_index10 = document.getElementById("menu");									//html:line:53
 const z_index0 = document.getElementById("z-index0");								//html:line:27
-const hamm = document.getElementsByClassName("hamm")[0];							//html:line:51
-const hamm2 = document.getElementsByClassName("hamm2")[0];							//html:line:54
-const gnav__menu__item = document.getElementsByClassName('gnav__menu__item')[0];	//html:line:59
-const gnav = document.getElementById("gnav");										//html:line:57
-
 
 const ImgPa=document.getElementById('imgPa');										//html:line:20
 const Img=document.getElementById('img');											//html:line:21
@@ -76,8 +69,6 @@ let state = false;
 
 z_index5.style.display = 'none';
 z_index11.style.display = 'none';
-z_index6.style.display = 'none';
-z_index10.style.display = 'none';
 z_index1.style.opacity = 0.3;
 z_index1.style.transform = "scale( "+0.3+" , "+0.3+" )"
 

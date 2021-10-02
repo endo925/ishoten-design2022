@@ -80,7 +80,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 .sink{
 	position: absolute;
 	text-align: center;
-	left: 37.5%;
+	transform: translate(-50%, -50%);
+	left: 50%;
 	top: 660px;
 	padding-top: 3200px;
 }

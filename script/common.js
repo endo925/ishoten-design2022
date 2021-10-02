@@ -253,24 +253,6 @@ window.addEventListener('scroll',()=>{
 		M.classList.remove("depout");
 	}
 
-	//最後の画面でposition:fixedを消して下にスクロールできるようにする
-	if(scrollTop>3200){
-		ImgPa.classList.remove('imgSc');			//css:line:38
-		Img.classList.remove('imgSc');				//css:line:37
-		IshoutenSc.classList.remove('ishoutenSc');	//css:line:60
-		InfoSc.classList.remove('infoSc');			//css:line:75
-		sinkSc.classList.remove('sinkSc');			//css:line:90
-		menu2Sc.classList.remove('menu2Sc');		//css:line:131
-	}
-	else{
-		ImgPa.classList.add('imgSc');
-		Img.classList.add('imgSc');
-		IshoutenSc.classList.add('ishoutenSc');
-		InfoSc.classList.add('infoSc');
-		sinkSc.classList.add('sinkSc');
-		menu2Sc.classList.add('menu2Sc');
-	}
-
 	
 },false);
 

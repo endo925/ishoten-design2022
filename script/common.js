@@ -35,8 +35,6 @@ const z_index5 = document.getElementById("z-index5");								//html:line:42
 const z_index11 = document.getElementById("z-index11"); 							//html:line:34
 const z_index0 = document.getElementById("z-index0");								//html:line:27
 
-const ImgPa=document.getElementById('imgPa');										//html:line:20
-const Img=document.getElementById('img');											//html:line:21
 
 const menu2Sc=document.getElementsByClassName('layer2')[0];							//html:line:53
 

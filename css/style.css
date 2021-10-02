@@ -96,7 +96,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	display: inline-block;
 	opacity: 1;
 	transition: ease 2s;
-	margin-right: 50px;
+	margin-right: 25px;
+	margin-left: 25px;
 }
 .depout h1{opacity:0;} 	/*js:line:301 2021pxスクロールで'depth'と'm'を消す*/
 

@@ -73,6 +73,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 .infoS.infoSc{
 	padding-top: 0px;
 	position: fixed;}
+.sns img{height: 20px;}
 
 /*深さdepth:0m html:line:12~18*/
 #log{z-index: 13;}

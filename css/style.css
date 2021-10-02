@@ -83,7 +83,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	transform: translate(-50%, -50%);
 	left: 50%;
 	top: 700px;
-	padding-top: 3200px;
+	width: 100%;
 }
 .sink div{transition: ease 2.0s;}
 .log2 div{transform: translateY(-200px)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/

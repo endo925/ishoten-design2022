@@ -196,28 +196,6 @@ window.addEventListener('scroll',()=>{
 	}
 	else{z_index11.style.display = 'none';}//コンセプト消す
 
-	//menu
-	let x2 = (scrollTop+750)*0.001;
-	z_index10.style.opacity =1;
-	z_index10.style.filter = "none";
-
-	if(scrollTop>=0&&scrollTop<1600){
-		z_index10.style.display = '';
-		if(scrollTop<150){
-			z_index10.style.opacity =scrollTop/150;
-			z_index10.style.transform = "scale( "+0.9+" , "+0.9+" )";
-			z_index10.style.filter = "blur("+xd+"px)";
-		}
-		else if(scrollTop>=150,scrollTop<250){z_index10.style.transform = "scale( "+x2+" , "+x2+" )";}
-		else if(scrollTop>=250,scrollTop<1450){z_index10.style.transform = "scale( "+1+" , "+1+" )";}
-		else{
-			x2 = (scrollTop-1250)*0.005;
-			z_index10.style.transform = "scale( "+x2+" , "+x2+" )";
-			z_index10.style.filter = "blur("+x+"px)";
-		}
-	}
-	else{z_index10.style.display = 'none';}
-
 		
 	
 	//what
@@ -249,23 +227,6 @@ window.addEventListener('scroll',()=>{
 	}
 	else{z_index5.style.display = 'none';}
 	
-	//menu2
-	let y2 = (scrollTopW+350)*0.001;
-	z_index6.style.opacity =1;
-	z_index6.style.filter = "none";
-
-	if(scrollTopW>=0){
-		z_index6.style.display = '';
-		if(scrollTopW<150){
-			z_index6.style.opacity =scrollTopW/150;
-			z_index6.style.transform = "scale( "+0.5+" , "+0.5+" )";
-			z_index6.style.filter = "blur("+yd+"px)";
-		}
-		else if(scrollTopW>=150,scrollTopW<650){z_index6.style.transform = "scale( "+y2+" , "+y2+" )";}
-		else {z_index6.style.transform = "scale( "+1+" , "+1+" )";}
-		}
-	else{z_index6.style.display = 'none';}
-
 	
 	
 	//意匠展とか開催概要が出てくる

@@ -15,7 +15,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
   height: 8em;
 }
 .loader {
-  margin: 310px auto;
+  margin: 350px auto;
   font-size: 10px;
   position: relative;
   border-top: 0.35em solid rgba(255, 255, 255, 0.2);

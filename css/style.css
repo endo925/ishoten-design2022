@@ -57,7 +57,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	width: 100%;
 	z-index: 12;
 	background-color:#000000;
-	transition: ease 3s;
+	transition: ease 2s;
 	pointer-events: none;
 	opacity: 1;
 }

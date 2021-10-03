@@ -101,7 +101,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	text-align: center;
 	top: 85%;
 	left: 30%;
-	font-size: 0.5em;
 	position: fixed;
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	

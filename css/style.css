@@ -4,8 +4,53 @@ html, body {margin:0; padding:0; width: 100%; height: 100%;}
 
 body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"}
 #input{display: none;}	/*ロード前は消す*/
-/*ロード画面*/
+
 *{color: aliceblue;}	/*白文字*/
+
+/*ローディングアニメーション*/
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 35em;
+  height: 35em;
+}
+.loader {
+  margin: 150px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.3em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.3em solid #ffffff;
+  border-bottom: 0.3em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.3em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 3.0s infinite linear;
+  animation: load8 3.0s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*ロード画面*/
 #load{
 	visibility: visible;
 	position: fixed;

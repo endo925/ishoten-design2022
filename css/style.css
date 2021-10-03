@@ -151,11 +151,19 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 /*ハンバーガーメニュー html:line:50~55 亡くなった*/
 
 
-#concept,#what{/*html:line:34~48*/
-	width: 600px;
+#concept{/*html:line:34~48*/
+	height: 50%;
+	width: 40%;
 	position: absolute;
 	top: 50%;
 	transform: translate(0%,-50%);
+}
+#what{/*html:line:34~48*/
+	height: 80%;
+	width: 25%;
+	position: absolute;
+	top: 50%;
+	transform: translate(10%,-50%);
 }
 
 

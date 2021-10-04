@@ -148,7 +148,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 .sink h1{width: 100px;}
 /*'depth'と'm'*/
 .depth{
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	display: inline-block;
 	opacity: 1;
 	transition: ease 2s;
@@ -200,6 +200,9 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	}
 	.img_sp {
 		display: block;
+	}
+	.depth{
+		font-size: 2rem;
 	}
     	#concept {
 		width: 70%;

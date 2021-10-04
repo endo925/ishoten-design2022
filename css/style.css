@@ -109,7 +109,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	width: 550px;
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
-.infoS {transform: translate(0px,-150px); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
+.infoS {transform: translate(0px,-15rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
 
 .sns img{
 	height: 3rem; margin: 10px;

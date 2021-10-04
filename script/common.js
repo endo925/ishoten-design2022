@@ -32,10 +32,10 @@ window.onload =()=>{
 }
 
 //ウィンドウリサイズ毎に
-window.onresize =()=> {
+window.addEventListener ('resize', =()=> {
 	ww = window.innerWidth;
 	wh = window.innerHeight;
-}
+}, false)
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25
 const z_index5 = document.getElementById("z-index5");								//html:line:42

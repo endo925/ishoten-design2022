@@ -41,10 +41,6 @@ const z_index0 = document.getElementById("z-index0");								//html:line:27
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;
 const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
-//what左寄せ
-const W = document.documentElement.clientWidth;	//表示画面のwidth取得
-const what = document.getElementById('what');	//html:line:43
-what.style.left = W-450+'px';
 
 
 //html:line:60~62

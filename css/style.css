@@ -110,7 +110,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: fixed;
 }
 .ishouten img{transition: ease 2.0s;}	/*2秒かけて動く*/
-.ishoutenS img{transform: translateY(- 20rem)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
+.ishoutenS img{transform: translateY(-15rem)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
 
 /*開催概要 html:line:27~32*/
 .info{
@@ -118,11 +118,11 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	top: 87%;
 	left: 50%;
 	position: fixed;
-	width: 50%;
+	width: 45%;
     	transform: translate(-50%, 0);
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
-.infoS {transform: translate(-50%,-15rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
+.infoS {transform: translate(-50%,-25rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
 
 .sns img{
 	height: 3rem; margin: 10px;
@@ -142,7 +142,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	pointer-events: none;
 }
 .sink div{transition: ease 2.0s;}
-.log2 div{transform: translateY(-17rem)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
+.log2 div{transform: translateY(-30rem)scale(3.5,3.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
 
 #log0{letter-spacing: 0.5rem;}
 .sink h2{width: 100px;}

@@ -132,7 +132,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 .sink div{transition: ease 2.0s;}
 .log2 div{transform: translateY(-30rem)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
 
-#log0{letter-spacing: 5px;}
+#log0{letter-spacing: 0.5rem;}
 .sink h2{width: 100px;}
 .sink h1{width: 100px;}
 /*'depth'と'm'*/

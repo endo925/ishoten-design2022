@@ -22,7 +22,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
   top:50%;
   left:50%;
   font-size: 10px;
-  position: relative;
+  position: absolute;
   border-top: 0.35em solid rgba(255, 255, 255, 0.2);
   border-right: 0.35em solid #ffffff;
   border-bottom: 0.35em solid rgba(255, 255, 255, 0.2);

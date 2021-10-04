@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
-html, body {margin:0; padding:0; width: 100%; height: 100%;}
+html {
+  font-size: 62.5%;
+}
+
+body {margin:0; padding:0; width: 100%; height: 100%;}
 
 body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"}
 #input{display: none;}	/*ロード前は消す*/

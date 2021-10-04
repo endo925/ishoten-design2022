@@ -17,8 +17,8 @@ let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	var ww = window.innerWidth;
+	var wh = window.innerHeight;
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -33,8 +33,8 @@ window.onload =()=>{
 
 //ウィンドウリサイズ毎に
 window.onresize =()=> {
-	w = window.innerWidth;
-	h = window.innerHeight;
+	ww = window.innerWidth;
+	wh = window.innerHeight;
 }
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25
@@ -81,7 +81,7 @@ window.addEventListener('scroll',()=>{
 	
 	
 	//意匠展
-	if (w > h) {	//pc用
+	if (ww > wh) {	//pc用
 		let z =(scrollTop+1000)*0.0003;
 		function f(z){return -10*z+10;}
 		let zd = f(z);

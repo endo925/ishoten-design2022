@@ -202,6 +202,9 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	.img_sp {
 		display: block;
 	}
+    	.sink{
+        	top: 90%;
+    	}
 	.depth{
 		font-size: 2.5rem;
 	}
@@ -213,7 +216,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 		transform: translate(-50%,-50%);
 	}
 	#what {
-		width: 50%;
+		width: 45%;
 		position: absolute;
 		top: 50%;
     		left: 50%;

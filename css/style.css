@@ -201,18 +201,21 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	.img_sp {
 		display: block;
 	}
-    	#concept{
+    	#concept {
 		width: 70%;
 		position: absolute;
 		top: 50%;
-    		left:50%;
+    		left: 50%;
 		transform: translate(-50%,-50%);
 	}
-	#what{
+	#what {
 		width: 70%;
 		position: absolute;
 		top: 50%;
-    		left:50%;
+    		left: 50%;
 		transform: translate(-50%,-50%);
+	}
+	.info {
+		width: 60%;
 	}
 }

@@ -71,6 +71,8 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 }
 
 /*背景 html:line:20~22*/
+#img{display:none;}
+@media (min-width: 769px) {
 #img{
 	position: fixed;
 	background-image: url("../image/visual.png");
@@ -78,10 +80,19 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 100%;
-	height: 1200px;				/*vi 縦長*/
+	width: 100vh;/*vi 縦長*/
 }
-
+	#img_sp{display:none;}
+}
+#img_sp{
+	position: fixed;
+	background-image: url("../image/visual_sp.png");
+	opacity: 0.6;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vh;				/*vi 縦長*/
+}
 /*重ね順*/
 #z-index0{z-index: 0;}/*開始概要*/
 #z-index1{z-index: 1; filter: blur(8px);}/*意匠展ロゴ*/

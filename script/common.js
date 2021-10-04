@@ -96,7 +96,13 @@ window.addEventListener('scroll',()=>{
 		z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		z_index1.style.filter = "blur("+2*z+"px)";
 		}
-		else{z_index1.style.display = 'none';}
+		else if(scrollTop>=400&&scrollTop<1800){z_index1.style.display = 'none';}
+		else{
+			z_index1.style.display = '';
+			z_index1.style.filter = "blur("+5+"px)";
+			z_index1.style.opacity = 0.5;
+			z_index1.style.transform = "scale( "+0.8+" , "+0.8+" )";
+		}
 	}
 	
 	

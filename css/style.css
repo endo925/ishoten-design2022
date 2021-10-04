@@ -98,7 +98,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: fixed;
 }
 .ishouten img{transition: ease 2.0s;}	/*2秒かけて動く*/
-.ishoutenS img{transform: translateY(- 10rem)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
+.ishoutenS img{transform: translateY(- 20rem)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
 
 /*開催概要 html:line:27~32*/
 .info{

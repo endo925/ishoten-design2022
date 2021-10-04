@@ -74,24 +74,27 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #img{display:none;}
 @media (min-width: 769px) {
 #img{
+	display:block;
 	position: fixed;
 	background-image: url("../image/visual.png");
 	opacity: 0.6;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 100vh;/*vi 縦長*/
+	width: 100vw;
+	height:100vh/*vi 縦長*/
 }
 	#img_sp{display:none;}
 }
-#img_sp{
+#img_sp{display:block;}
 	position: fixed;
 	background-image: url("../image/visual_sp.png");
 	opacity: 0.6;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 100vh;				/*vi 縦長*/
+	width: 100vw;
+	height:100vh;/*vi 縦長*/
 }
 /*重ね順*/
 #z-index0{z-index: 0;}/*開始概要*/

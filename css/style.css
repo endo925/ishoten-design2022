@@ -180,7 +180,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	width: 25%;
 	position: absolute;
 	top: 50%;
-	transform: translate(0%,-50%);
+	transform: translate(100%,-50%);
 }
 
 /*pc用*/

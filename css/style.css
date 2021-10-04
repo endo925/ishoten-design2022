@@ -149,7 +149,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	position: fixed;
 	width: 100%;
 }
-/*ハンバーガーメニュー html:line:50~55 亡くなった*/
 
 
 #concept{/*html:line:34~48*/
@@ -167,6 +166,20 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	transform: translate(10%,-50%);
 }
 
-@media (orientation: portrait) {	/*スマホ用(縦長のとき)*/
-	
+/*pc用*/
+.img_pc {
+	visibility: visible;
+}
+.img_sp {
+	visibility: hidden;
+}
+
+/*スマホ用(縦長のとき)*/
+@media (orientation: portrait) {
+	.img_pc {
+		visibility: hidden;
+	}
+	.img_sp {
+		visibility: visible;
+	}
 }

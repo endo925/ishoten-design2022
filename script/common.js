@@ -74,14 +74,16 @@ window.addEventListener('scroll',()=>{
 	
 	
 	//意匠展
-	let z =(scrollTop+1000)*0.0003;
-	function f(z){return -10*z+10;}
-	let zd = f(z);
-	z_index1.style.filter = "blur("+zd+"px)";
-	z_index1.style.opacity = z;
-	if(z<1){
-		z_index1.style.transform = "scale( "+z+" , "+z+" )";
-	} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
+	if (window.innerWidth > window.innerHeight) {	//pcのとき
+		let z =(scrollTop+1000)*0.0003;
+		function f(z){return -10*z+10;}
+		let zd = f(z);
+		z_index1.style.filter = "blur("+zd+"px)";
+		z_index1.style.opacity = z;
+		if(z<1){
+			z_index1.style.transform = "scale( "+z+" , "+z+" )";
+		} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
+	}
 	
 	
 	//concept

@@ -168,25 +168,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 }
 
 
-.s1{
-	padding-left: 80px;
-	font-size: 5.0em;
-	margin: 250px 0 0 50px;
-}
-
-.s2{padding-left: 80px;padding-top: 40px;margin: 0 25px 0 100px;line-height: 40px;letter-spacing: 4px;}
-
-.side{
-	writing-mode: vertical-rl;/*縦書き*/
-	position: absolute;
-	left: 0;
-	top: 40%;
-}
-.side img{padding-left: 30px;padding-top: 50px; width:120px;}
-
-#what .s2{padding-left: 20px;writing-mode: vertical-rl;}
-#what .s1{margin-top: 50px;}
-#what .side{top:30%;padding-left: 300px;}
 
 
 /*ハンバーガーメニュー押したら出てくるやつ html:line57~* 消えた/

@@ -70,6 +70,7 @@ if(window.innerWidth > window.innerHeight) {	//pc
 else{	//スマホ
 	z_index1.style.opacity = 1;
 	z_index1.style.transform = "scale( "+1+" , "+1+" )";
+	z_index1.style.display = ''
 }
 const log = document.getElementById('log');	//scroll:0
 

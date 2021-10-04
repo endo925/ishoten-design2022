@@ -171,18 +171,16 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 
 
 #concept{/*html:line:34~48*/
-	height: 50%;
 	width: 40%;
 	position: absolute;
 	top: 50%;
 	transform: translate(0%,-50%);
 }
 #what{/*html:line:34~48*/
-	height: 80%;
 	width: 25%;
 	position: absolute;
 	top: 50%;
-	transform: translate(10%,-50%);
+	transform: translate(0%,-50%);
 }
 
 /*pc用*/
@@ -200,5 +198,19 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	}
 	.img_sp {
 		display: block;
+	}
+    	#concept{
+		width: 70%;
+		position: absolute;
+		top: 50%;
+    		left:50%;
+		transform: translate(-50%,-50%);
+	}
+	#what{
+		width: 70%;
+		position: absolute;
+		top: 50%;
+    		left:50%;
+		transform: translate(-50%,-50%);
 	}
 }

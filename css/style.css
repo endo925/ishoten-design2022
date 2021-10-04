@@ -186,7 +186,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 @media (orientation: portrait) {
 	.img_pc {
 		visibility: hidden;
-		text-align:center;
 	}
 	.img_sp {
 		visibility: visible;

@@ -84,28 +84,38 @@ window.addEventListener('scroll',()=>{
 			z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
 	} else {	//スマホ用
-		
+		z_index1.style.opacity = 1;
+		z_index1.style.transform = "scale( "+1+" , "+1+" )"
+		let z = (scrollTop+100)*0.01;
+		function ishou(z){return -10*z+10;}
+		let zd = ishou(z);
+		if(scrollTop>=0&&scrollTop<400){
+		z_index1.style.transform = "scale( "+z+" , "+z+" )";
+		z_index1.style.filter = "blur("+2*z+"px)";
+		}
+		else{z_index1.style.display = 'none';}
 	}
 	
 	
 	//concept
-	let x = (scrollTop+750)*0.001;
+	let scrollTopC = scrollTop-200;
+	let x = (scrollTopC+750)*0.001;
 	function con(x){return -10*x+10;}
 	let xd = con(x);
 	z_index11.style.opacity =1;
 	z_index11.style.filter = "none";
 
-	if(scrollTop>=0&&scrollTop<1400){
+	if(scrollTopC>=0&&scrollTopC<1400){
 		z_index11.style.display = '';//表示
-		if(scrollTop<150){
-			z_index11.style.opacity =scrollTop/150;
+		if(scrollTopC<150){
+			z_index11.style.opacity =scrollTopC/350;
 			z_index11.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index11.style.filter = "blur("+xd+"px)";
 		}//150pxは動かない
-		else if(scrollTop>=150,scrollTop<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/1000拡大
-		else if(scrollTop>=250,scrollTop<800){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopC>=150,scrollTopC<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/1000拡大
+		else if(scrollTopC>=250,scrollTopC<800){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-			x = (scrollTop-700)*0.01;
+			x = (scrollTopC-700)*0.01;
 			z_index11.style.transform = "scale( "+x+" , "+x+" )";
 			z_index11.style.filter = "blur("+2*x+"px)";
 		}
@@ -115,7 +125,7 @@ window.addEventListener('scroll',()=>{
 		
 	
 	//what
-	let scrollTopW = scrollTop-900;
+	let scrollTopW = scrollTop-1100;
 	let y = (scrollTopW+350)*0.001;
 	function wha(y){return -10*y+10;}
 	let yd = wha(y);

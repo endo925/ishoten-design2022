@@ -32,7 +32,7 @@ window.onload =()=>{
 }
 
 //ウィンドウリサイズ毎に
-window.addEventListener ('resize', =()=> {
+window.addEventListener ('resize', ()=> {
 	ww = window.innerWidth;
 	wh = window.innerHeight;
 }, false)

@@ -93,6 +93,7 @@ window.addEventListener('scroll',()=>{
 	} else {	//スマホ用
 		let z = (scrollTop+100)*0.01;
 		if(scrollTop>=0&&scrollTop<400){
+		z_index1.style.display = '';
 		z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		z_index1.style.filter = "blur("+2*z+"px)";
 		}

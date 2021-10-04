@@ -83,6 +83,8 @@ window.addEventListener('scroll',()=>{
 		if(z<1){
 			z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
+	} else {	//スマホ用
+		
 	}
 	
 	

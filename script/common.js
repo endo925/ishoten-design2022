@@ -118,9 +118,9 @@ window.addEventListener('scroll',()=>{
 			z_index11.style.filter = "blur("+xd+"px)";
 		}//150pxは動かない
 		else if(scrollTopC>=150,scrollTopC<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/1000拡大
-		else if(scrollTopC>=250,scrollTopC<800){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopC>=250,scrollTopC<650){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-			x = (scrollTopC-700)*0.01;
+			x = (scrollTopC-550)*0.01;
 			z_index11.style.transform = "scale( "+x+" , "+x+" )";
 			z_index11.style.filter = "blur("+2*x+"px)";
 		}
@@ -130,7 +130,7 @@ window.addEventListener('scroll',()=>{
 		
 	
 	//what
-	let scrollTopW = scrollTop-1100;
+	let scrollTopW = scrollTop-950;
 	let y = (scrollTopW+350)*0.001;
 	function wha(y){return -10*y+10;}
 	let yd = wha(y);
@@ -149,9 +149,9 @@ window.addEventListener('scroll',()=>{
 			z_index5.style.opacity =scrollTopW/500;
 			z_index5.style.filter = "blur("+yd+"px)";
 		}
-		else if(scrollTopW>=650,scrollTopW<1200){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopW>=650,scrollTopW<1050){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-			y = (scrollTopW-1100)*0.01;
+			y = (scrollTopW-950)*0.01;
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 			z_index5.style.filter = "blur("+2*y+"px)";
 		}

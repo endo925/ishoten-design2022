@@ -17,6 +17,8 @@ let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
+	var w = window.innerWidth;
+	var h = window.innerHeight;
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -31,8 +33,8 @@ window.onload =()=>{
 
 //ウィンドウリサイズ毎に
 window.onresize =()=> {
-	var w = window.innerWidth;
-	var h = window.innerHeight;
+	w = window.innerWidth;
+	h = window.innerHeight;
 }
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25

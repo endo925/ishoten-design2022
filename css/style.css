@@ -166,3 +166,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	top: 50%;
 	transform: translate(10%,-50%);
 }
+
+@media (orientation: portrait) {	/*スマホ用(縦長のとき)*/
+	
+}

@@ -31,11 +31,6 @@ window.onload =()=>{
 	}, 50);
 }
 
-//ウィンドウリサイズ毎に
-window.addEventListener ('resize', ()=> {
-	ww = window.innerWidth;
-	wh = window.innerHeight;
-}, false)
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25
 const z_index5 = document.getElementById("z-index5");								//html:line:42
@@ -81,17 +76,14 @@ window.addEventListener('scroll',()=>{
 	
 	
 	//意匠展
-	if (ww > wh) {	//pc用
-		let z =(scrollTop+1000)*0.0003;
-		function f(z){return -10*z+10;}
-		let zd = f(z);
-		z_index1.style.filter = "blur("+zd+"px)";
-		z_index1.style.opacity = z;
-		if(z<1){
-			z_index1.style.transform = "scale( "+z+" , "+z+" )";
-		}
-		else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
-	}
+	let z =(scrollTop+1000)*0.0003;
+	function f(z){return -10*z+10;}
+	let zd = f(z);
+	z_index1.style.filter = "blur("+zd+"px)";
+	z_index1.style.opacity = z;
+	if(z<1){
+		z_index1.style.transform = "scale( "+z+" , "+z+" )";
+	} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
 	
 	
 	//concept

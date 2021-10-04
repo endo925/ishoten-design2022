@@ -115,10 +115,9 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 .info{
 	text-align: center;
 	top: 87%;
-	left: 50%;
+	left: 25%;
 	position: fixed;
-	width: 40%;
-	transform: translate(-50%,-50%);
+	width: 50%;
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
 .infoS {transform: translateY(-17rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
@@ -141,7 +140,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	pointer-events: none;
 }
 .sink div{transition: ease 2.0s;}
-.log2 div{transform: translateY(-12rem)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
+.log2 div{transform: translateY(-17rem)scale(2.5,2.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
 
 #log0{letter-spacing: 0.5rem;}
 .sink h2{width: 100px;}

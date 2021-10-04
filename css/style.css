@@ -176,18 +176,18 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 
 /*pc用*/
 .img_pc {
-	visibility: visible;
+	display: block;
 }
 .img_sp {
-	visibility: hidden;
+	display: none;
 }
 
 /*スマホ用(縦長のとき)*/
 @media (orientation: portrait) {
 	.img_pc {
-		visibility: hidden;
+		display: none;
 	}
 	.img_sp {
-		visibility: visible;
+		display: block;
 	}
 }

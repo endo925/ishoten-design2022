@@ -17,8 +17,6 @@ let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
 window.onload =()=>{
-	var ww = window.innerWidth;
-	var wh = window.innerHeight;
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();

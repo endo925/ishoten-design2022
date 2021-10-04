@@ -95,7 +95,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 }
 /*重ね順*/
 #z-index0{z-index: 0;}/*開始概要*/
-#z-index1{z-index: 1; filter: blur(8px);}/*意匠展ロゴ*/
+#z-index1{z-index: 1;}/*意匠展ロゴ*/
 #z-index5{z-index: 5;}/*what*/
 #z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
 

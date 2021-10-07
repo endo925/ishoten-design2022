@@ -70,9 +70,7 @@ else{	//スマホ
 const log = document.getElementById('log');	//scroll:0
 
 //スクロールされた時に実行
-window.addEventListener('scroll', common(),false);
-
-function common() {
+window.addEventListener('scroll', ()=>{
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
 	log0.textContent = scrollTop;	//文字起こし
 	
@@ -183,4 +181,4 @@ function common() {
 		z_index0.classList.remove('infoS');
 		M.classList.remove("depout");
 	}
-}
+},false);

@@ -32,7 +32,7 @@ let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100
 if (window.performance.navigation.type === 1) {
 	test();
 	canSc();
-	console.log('reload');
+	document.scrollingElement.scrollTop = 0;
 } else {
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{

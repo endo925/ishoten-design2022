@@ -101,11 +101,11 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
 
 /*意匠展ロゴ html:line:25*/
-.ishouten img{width: 400px;}
+.ishouten img{width: 350px;}
 .ishouten{
 	font-size: 3.0em;
 	text-align: center;
-	top: 35%;
+	top: 45%;
 	width: 100%;
 	position: fixed;
 }
@@ -204,6 +204,9 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	}
 	.img_sp {
 		display: block;
+	}
+	.ishouten img{
+		width: 190px;
 	}
     	.sink{
         	top: 90%;

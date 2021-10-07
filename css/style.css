@@ -178,14 +178,14 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	width: 40%;
 	position: absolute;
 	top: 50%;
-	left: 0%;
+	right: 2%;
 	transform: translate(0%,-50%);
 }
 #what{/*html:line:34~48*/
 	width: 23%;
 	position: absolute;
 	top: 50%;
-	right: 2%;
+	left: 2%;
 	transform: translate(0%,-50%);
 }
 

@@ -28,7 +28,7 @@ window.addEventListener('load', ()=>{
 		}	//intervalIdをclearIntervalで指定している
 	}, 50);
 }, {
-	once: ture
+	once: true
 })
 
 

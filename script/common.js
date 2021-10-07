@@ -30,6 +30,7 @@ window.onload =()=>{
 }
 
 if (window.performance) {
+	console.log('prfrmnc');
 	if (performance.navigation.type === 2) {
 		test();
 		canSc();

@@ -29,13 +29,10 @@ window.onload =()=>{
 	}, 50);
 }
 
-if (window.performance) {
-	console.log('prfrmnc');
-	if (performance.navigation.type === 2) {
-		test();
-		canSc();
-		console.log('reload');
-	}
+if (performance.navigation.type === 2) {
+	test();
+	canSc();
+	console.log('reload');
 }
 
 

@@ -96,6 +96,8 @@ function loading() {
 }
 
 function common() {
+	test();
+	canSc();
 	
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
 	log0.textContent = scrollTop;	//文字起こし

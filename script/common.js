@@ -29,6 +29,8 @@ window.onload =()=>{
 	}, 50);
 }
 
+console.log('test');
+console.log(window.performance.navigation.type);
 if (window.performance.navigation.type === 2) {
 	test();
 	canSc();

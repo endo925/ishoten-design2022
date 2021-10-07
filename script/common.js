@@ -27,6 +27,8 @@ window.onload =()=>{
 			setTimeout(canSc, 1000);
 		}	//intervalIdをclearIntervalで指定している
 	}, 50);
+console.log('test');
+console.log(window.performance.navigation.type);
 }
 
 console.log('test');

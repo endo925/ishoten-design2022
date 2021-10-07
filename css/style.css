@@ -218,12 +218,12 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	    	margin-left: 0rem;
 	}
 	.log2 div{
-		transform: translateY(-30rem);
+		transform: translateY(-40rem);
 	}
     	#concept {
 		width: 70%;
 		position: absolute;
-		top: 50%;
+		top: 48%;
     		left: 50%;
 		transform: translate(-50%,-50%);
 	}
@@ -235,6 +235,6 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 		transform: translate(-50%,-50%);
 	}
 	.info {
-		width: 70%;
+		width: 80%;
 	}
 }

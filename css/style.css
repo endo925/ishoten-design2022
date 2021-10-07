@@ -101,7 +101,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
 
 /*意匠展ロゴ html:line:25*/
-.ishouten img{width: 350px;}
+.ishouten img{width: 35rem;}
 .ishouten{
 	font-size: 3.0em;
 	text-align: center;
@@ -175,14 +175,14 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 
 
 #concept{/*html:line:34~48*/
-	width: 40%;
+	width: 45rem;
 	position: absolute;
 	top: 50%;
 	left: 2%;
 	transform: translate(0%,-50%);
 }
 #what{/*html:line:34~48*/
-	width: 23%;
+	width: 25rem;
 	position: absolute;
 	top: 50%;
 	right: 6%;
@@ -206,7 +206,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 		display: block;
 	}
 	.ishouten img{
-		width: 180px;
+		width: 15rem;
 	}
     	.sink{
         	top: 90%;

@@ -33,6 +33,7 @@ if (window.performance) {
 	if (performance.navigation.type === 2) {
 		test();
 		canSc();
+		console.log('reload');
 	}
 }
 

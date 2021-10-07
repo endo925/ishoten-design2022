@@ -29,7 +29,7 @@ window.onload =()=>{
 	}, 50);
 }
 
-if (performance.navigation.type === 2) {
+if (window.performance.navigation.type === 2) {
 	test();
 	canSc();
 	console.log('reload');

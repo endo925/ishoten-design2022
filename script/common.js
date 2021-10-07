@@ -29,6 +29,13 @@ window.onload =()=>{
 	}, 50);
 }
 
+if (window.performance) {
+	if (performance.navigation.type === 2) {
+		test();
+		canSc();
+	}
+}
+
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25
 const z_index5 = document.getElementById("z-index5");								//html:line:42

@@ -130,8 +130,8 @@ window.addEventListener('scroll',()=>{
 		
 	
 	//what
-	let scrollTopW = scrollTop-950;
-	let y = (scrollTopW+350)*0.001;
+	let scrollTopW = scrollTop-750;
+	let y = (scrollTopW+750)*0.001;
 	function wha(y){return -10*y+10;}
 	let yd = wha(y);
 	z_index5.style.opacity =1;
@@ -140,18 +140,16 @@ window.addEventListener('scroll',()=>{
 	if(scrollTopW>=0&&scrollTopW<1400){
 		z_index5.style.display = '';
 		if(scrollTopW<150){
-			z_index5.style.opacity =scrollTopW/500;
-			z_index5.style.transform = "scale( "+0.5+" , "+0.5+" )"; //半分の大きさからスタート
+			z_index5.style.opacity =scrollTopW/350;
+			z_index5.style.transform = "scale( "+0.9+" , "+0.9+" )"; //半分の大きさからスタート
 			z_index5.style.filter = "blur("+yd+"px)";
 		}//150pxは動かない
-		else if(scrollTopW>=150,scrollTopW<650){
+		else if(scrollTopW>=150,scrollTopW<250){
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
-			z_index5.style.opacity =scrollTopW/500;
-			z_index5.style.filter = "blur("+yd+"px)";
 		}
-		else if(scrollTopW>=650,scrollTopW<1050){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopW>=250,scrollTopW<650){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-			y = (scrollTopW-950)*0.01;
+			y = (scrollTopW-550)*0.01;
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 			z_index5.style.filter = "blur("+2*y+"px)";
 		}

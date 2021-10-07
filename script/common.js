@@ -16,7 +16,7 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
-window.onload =()=>{
+window.addEventListener('load', ()=>{
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -27,7 +27,9 @@ window.onload =()=>{
 			setTimeout(canSc, 1000);
 		}	//intervalIdをclearIntervalで指定している
 	}, 50);
-}
+}, {
+	once: ture
+})
 
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25

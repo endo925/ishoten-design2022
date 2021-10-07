@@ -16,7 +16,7 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
 //ロードされたら実行
-/*window.onload =()=>{
+window.onload =()=>{
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -27,7 +27,7 @@ let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100
 			setTimeout(canSc, 1000);
 		}	//intervalIdをclearIntervalで指定している
 	}, 50);
-}*/
+}
 
 
 const z_index1 = document.getElementById("z-index1");								//html:line:25
@@ -69,36 +69,10 @@ else{	//スマホ
 }
 const log = document.getElementById('log');	//scroll:0
 
-if (window.performance) {
-	if (performance.navigation.type === 0 || performance.navigation.type === 2) {
-		loading();
-	} else {
-		common();
-	}
-} else {
-	common();
-}
-
 //スクロールされた時に実行
 window.addEventListener('scroll', common(),false);
 
-function loading() {
-	//50m秒ごとに繰り返し
-	const intervalId = setInterval(() =>{
-		countDown();
-		//0になったらロード画面消してスクロール可能
-		if(count<0){
-			clearInterval(intervalId);
-			setTimeout(test, 1000);
-			setTimeout(canSc, 1000);
-		}	//intervalIdをclearIntervalで指定している
-	}, 50);
-}
-
 function common() {
-	test();
-	canSc();
-	
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
 	log0.textContent = scrollTop;	//文字起こし
 	

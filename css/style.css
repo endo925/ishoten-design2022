@@ -237,5 +237,5 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	.info {
 		width: 80%;
 	}
-	.infoS {transform: translate(-50%,-5rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
+	.infoS {transform: translate(-50%,-30rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }

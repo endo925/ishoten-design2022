@@ -72,10 +72,11 @@ const log = document.getElementById('log');	//scroll:0
 if (window.performance) {
 	if (performance.navigation.type === 0 || performance.navigation.type === 2) {
 		loading();
-	}
-	if (performance.navigation.type === 1) {
+	} else {
 		common();
 	}
+} else {
+	common();
 }
 
 //スクロールされた時に実行

@@ -33,7 +33,7 @@ console.log(window.performance.navigation.type);
 
 console.log('test');
 console.log(window.performance.navigation.type);
-if (window.performance.navigation.type === 2) {
+if (window.performance.navigation.type === 1) {
 	test();
 	canSc();
 	console.log('reload');

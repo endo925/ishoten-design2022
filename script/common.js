@@ -42,11 +42,6 @@ const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;
 const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 
-const conceptLS = document.getElementById("conceptLink");	
-const whatLS = document.getElementById("whatLink");
-const infoLS = document.getElementById("infoLink");
-
-const elemsA=document.getElementsByTagName('span');
 
 let state = false;
 

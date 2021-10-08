@@ -12,8 +12,9 @@ const test=()=>{
 }
 const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: false });}//スクロール禁止を消す関数
 
+const log0 =document.getElementById('log0');
 let count = 100;
-let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
+let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
 
 if (window.performance.navigation.type === 1) {	//リロード時
 	test();
@@ -43,7 +44,6 @@ const z1_style = z1.style;
 const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 
 
-let state = false;
 
 z_index5.style.display = 'none';
 z_index11.style.display = 'none';

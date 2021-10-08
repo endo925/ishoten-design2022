@@ -225,8 +225,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	    	margin-left: 0rem;
 	}
 	.log2 div{
-		transform: translateY(-50vh);
-		scale(1.5, 1.5);
+		transform: translateY(-50vh)scale(2, 2);
 	}
     	#concept {
 		width: 70%;

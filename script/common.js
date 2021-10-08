@@ -5,9 +5,8 @@ const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: fal
 noSc();
 
 const test=()=>{
-		//ここでローディング画像を表示していたDIVを非表示にする css:line:9~23
+		//ここでローディング画像を表示していたDIVを非表示にする
 		document.getElementById('load').classList.add('fade');
-		
 		//ここで本体を表示にさせる
 		document.getElementById('input').style.display = 'block';
 }
@@ -15,26 +14,13 @@ const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: f
 
 let count = 100;
 let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100からカウントダウン
-//ロードされたら実行
-/*window.onload =()=>{
-	//50m秒ごとに繰り返し
-	const intervalId = setInterval(() =>{
-		countDown();
-		//0になったらロード画面消してスクロール可能
-		if(count<0){
-			clearInterval(intervalId);
-			setTimeout(test, 1000);
-			setTimeout(canSc, 1000);
-		}	//intervalIdをclearIntervalで指定している
-	}, 50);
-}*/
 
-if (window.performance.navigation.type === 1) {
+if (window.performance.navigation.type === 1) {	//リロード時
 	test();
 	canSc();
 	var b = document.getElementsByTagName('body');
 	b.scrollTop = 0;
-} else {
+} else {	//リロード以外のページ読み込み時
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -43,36 +29,26 @@ if (window.performance.navigation.type === 1) {
 			clearInterval(intervalId);
 			setTimeout(test, 1000);
 			setTimeout(canSc, 1000);
-		}	//intervalIdをclearIntervalで指定している
+		}	//intervalIdをclearIntervalで指定
 	}, 50);
 }
 
-
-const z_index1 = document.getElementById("z-index1");								//html:line:25
-const z_index5 = document.getElementById("z-index5");								//html:line:42
-const z_index11 = document.getElementById("z-index11"); 							//html:line:34
-const z_index0 = document.getElementById("z-index0");								//html:line:27
-
-
-
+const z_index1 = document.getElementById("z-index1");
+const z_index5 = document.getElementById("z-index5");
+const z_index11 = document.getElementById("z-index11");
+const z_index0 = document.getElementById("z-index0");
 
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;
 const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 
-
-//html:line:60~62
 const conceptLS = document.getElementById("conceptLink");	
 const whatLS = document.getElementById("whatLink");
 const infoLS = document.getElementById("infoLink");
 
 const elemsA=document.getElementsByTagName('span');
 
-
-
 let state = false;
-//ハンバーガーメニュークリック
-
 
 z_index5.style.display = 'none';
 z_index11.style.display = 'none';
@@ -135,7 +111,7 @@ window.addEventListener('scroll', ()=>{
 			z_index11.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index11.style.filter = "blur("+xd+"px)";
 		}//150pxは動かない
-		else if(scrollTopC>=150,scrollTopC<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}//スクロール量の1/1000拡大
+		else if(scrollTopC>=150,scrollTopC<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}
 		else if(scrollTopC>=250,scrollTopC<650){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
 			x = (scrollTopC-550)*0.01;
@@ -159,7 +135,7 @@ window.addEventListener('scroll', ()=>{
 		z_index5.style.display = '';
 		if(scrollTopW<150){
 			z_index5.style.opacity =scrollTopW/350;
-			z_index5.style.transform = "scale( "+0.9+" , "+0.9+" )"; //半分の大きさからスタート
+			z_index5.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index5.style.filter = "blur("+yd+"px)";
 		}//150pxは動かない
 		else if(scrollTopW>=150,scrollTopW<250){
@@ -174,22 +150,20 @@ window.addEventListener('scroll', ()=>{
 	}
 	else{z_index5.style.display = 'none';}
 	
-	
-	
-	//意匠展とか開催概要が出てくる
-	const M = document.getElementById("M");		//html:line:13
+	//意匠展、開催概要
+	const M = document.getElementById("M");
 	const scroll=()=>{window.scrollBy(0, 1);} 	//y軸1ずつ自動スクロール
 	
 	if(scrollTop>1900){
-		z_index1.classList.add('ishoutenS');	//css:line:59
+		z_index1.classList.add('ishoutenS');
 		var rep = setTimeout(scroll,0);		//0m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
-			log.classList.add('log2');		//css:line:89
+			log.classList.add('log2');
 			log0.textContent = 2022;
-			M.classList.add("depout");		//css:line:103
+			M.classList.add("depout");
 		}
 		if(scrollTop>2250){
-			z_index0.classList.add('infoS');	//css:line:74
+			z_index0.classList.add('infoS');
 			clearTimeout(rep);			//自動スクロール停止
 		}
 	}

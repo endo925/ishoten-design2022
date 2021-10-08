@@ -35,6 +35,8 @@ if (window.performance.navigation.type === 1) {
 	var b = document.getElementsByTagName('body');
 	b.scrollTop = 0;
 } else {
+	var b = document.getElementsByTagName('body');
+	b.scrollTop = 0;
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();

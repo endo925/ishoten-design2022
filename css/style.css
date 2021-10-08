@@ -225,7 +225,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	    	margin-left: 0rem;
 	}
 	.log2 div{
-		transform: translateY(-50vh)scale(2, 2);
+		transform: translateY(-46vh)scale(2, 2);
 	}
     	#concept {
 		width: 70%;
@@ -242,7 +242,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 		transform: translate(-50%,-50%);
 	}
 	.info{
-		width: 40%;
+		width: 60%;
 	}
 	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }

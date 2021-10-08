@@ -245,5 +245,9 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	.info{
 		width: 60%;
 	}
+	.info img{
+		width: 60%;
+	}
+	
 	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }

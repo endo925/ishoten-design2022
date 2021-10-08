@@ -4,9 +4,14 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+	font-family: 'Times';
+	src: url("../fonts/Times New Roman.ttf");
+}
+
 body {margin:0; padding:0; width: 100%; height: 100%;}
 
-body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"}
+body{height: 4200px; background-color: #000000;font-family:Times}
 #input{display: none;}	/*ロード前は消す*/
 
 *{color: aliceblue;}	/*白文字*/

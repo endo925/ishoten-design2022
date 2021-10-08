@@ -41,7 +41,7 @@ const z_index0 = document.getElementById("z-index0");
 
 const z1 = document.getElementById("z-index1");
 const z1_style = z1.style;
-const z1_trnsfrm = z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
+z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 
 
 

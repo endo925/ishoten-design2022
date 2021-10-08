@@ -164,6 +164,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	transition: ease 2s;
 	margin-right: 2.5rem;
 	margin-left: 2.5rem;
+	letter-spacing: 0.2rem;
 }
 .depout h1{opacity:0;} 	/*js:line:301 2021pxスクロールで'depth'と'm'を消す*/
 

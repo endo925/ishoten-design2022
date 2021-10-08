@@ -248,5 +248,5 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 
 	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }
-	.infoS img {width:80%;} 			/*js:line:304 2250pxまでスクロールで追加*/
+	.infoS img_sp {width:80%;} 			
 }

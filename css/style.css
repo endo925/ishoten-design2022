@@ -14,7 +14,7 @@ body {margin:0; padding:0; width: 100%; height: 100%;}
 body{height: 4200px; background-color: #000000;font-family:Times;}
 #input{display: none;}	/*ロード前は消す*/
 
-*{color: aliceblue;}	/*白文字*/
+*{color: aliceblue;}
 
 /*ローディングアニメーション*/
 .loader,
@@ -68,12 +68,12 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	pointer-events: none;
 	opacity: 1;
 }
-#load.fade{		/*js:line:7*/
+#load.fade{
 	opacity: 0;
 	visibility: hidden;
 }
 
-/*背景 html:line:20~22*/
+/*背景*/
 #img{display:none;}
 @media (min-width: 769px) {
 #img{
@@ -85,7 +85,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100vw;
-	height:100vh/*vi 縦長*/
+	height:100vh
 }
 	#img_sp{display:none;}
 }
@@ -97,15 +97,15 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100vw;
-	height:100vh;/*vi 縦長*/
+	height:100vh;
 }
 /*重ね順*/
 #z-index0{z-index: 0;}/*開始概要*/
 #z-index1{z-index: 1;}/*意匠展ロゴ*/
 #z-index5{z-index: 5;}/*what*/
-#z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
+#z-index11{z-index: 11;will-change: filter;pointer-events: none;}
 
-/*意匠展ロゴ html:line:25*/
+/*意匠展ロゴ*/
 .ishouten img{width: 30vh;}
 .ishouten{
 	font-size: 3.0em;
@@ -116,9 +116,9 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	transform: translateY(-50%); 
 }
 .ishouten img{transition: ease 2.0s;}	/*2秒かけて動く*/
-.ishoutenS img{transform: translateY(-20vh)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
+.ishoutenS img{transform: translateY(-20vh)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される*/
 
-/*開催概要 html:line:27~32*/
+/*開催概要*/
 .info{
 	text-align: center;
 	top: 87%;
@@ -128,7 +128,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
     	transform: translate(-50%, 0);
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
-.infoS {transform: translate(-50%,-20vh); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
+.infoS {transform: translate(-50%,-20vh); opacity:1;filter: blur(0px);} 			/*2250pxまでスクロールで追加*/	
 
 .sns img{
 	height: 3rem; margin: 10px;
@@ -139,7 +139,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 }
 .icon:hover{opacity: 0.7;}
 
-/*深さdepth:0m html:line:12~18*/
+/*depth*/
 #log{z-index: 13;}
 .sink{
 	position: fixed;
@@ -151,7 +151,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	pointer-events: none;
 }
 .sink div{transition: ease 2.0s;}
-.log2 div{transform: translateY(-40vh)scale(3.5,3.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
+.log2 div{transform: translateY(-40vh)scale(3.5,3.5);} 	/*2021pxまでスクロールで追加*/
 
 #log0{letter-spacing: 0.5rem;}
 .sink h2{width: 100px;}
@@ -167,29 +167,23 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	letter-spacing: 0.2rem;
 	font-weight: 100;
 }
-.depout h1{opacity:0;} 	/*js:line:301 2021pxスクロールで'depth'と'm'を消す*/
+.depout h1{opacity:0;} 	/*2021pxスクロールで'depth'と'm'を消す*/
 
-
-
-
-
-/*拡大するやつconcept,what html:line:34~55*/
+/*concept,what*/
 .layer{
 	height: 100%;
 	position: relative;
 	position: fixed;
 	width: 100%;
 }
-
-
-#concept{/*html:line:34~48*/
+#concept{
 	width: 48rem;
 	position: absolute;
 	top: 50%;
 	left: 3%;
 	transform: translate(0%,-50%);
 }
-#what{/*html:line:34~48*/
+#what{
 	width: 28rem;
 	position: absolute;
 	top: 50%;
@@ -207,16 +201,19 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 
 /*スマホ用(縦長のとき)*/
 @media (orientation: portrait) {
+	/*画像*/
 	.img_pc {
 		display: none;
 	}
 	.img_sp {
 		display: block;
 	}
+	/*意匠展ロゴ*/
 	.ishouten img{
 		width: 20vh;
 	}
 	.ishoutenS img{transform: translateY(-24vh)scale(1.5,1.5);}
+	/*depth*/
     	.sink{
         	top: 90%;
     	}
@@ -228,6 +225,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	.log2 div{
 		transform: translateY(-46vh)scale(2, 2);
 	}
+	/*concept, what*/
     	#concept {
 		width: 70%;
 		position: absolute;
@@ -242,9 +240,9 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
     		left: 50%;
 		transform: translate(-50%,-50%);
 	}
+	/*開催概要*/
 	.info{
 		width: 60%;
 	}
-
-	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
+	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);}
 }

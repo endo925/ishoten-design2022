@@ -101,7 +101,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 #z-index11{z-index: 11;will-change: filter;pointer-events: none;}/*コンセプト*/
 
 /*意匠展ロゴ html:line:25*/
-.ishouten img{width: 30rem;}
+.ishouten img{width: 30vh;}
 .ishouten{
 	font-size: 3.0em;
 	text-align: center;
@@ -123,7 +123,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
     	transform: translate(-50%, 0);
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
-.infoS {transform: translate(-50%,-20rem); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
+.infoS {transform: translate(-50%,-20vh); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/	
 
 .sns img{
 	height: 3rem; margin: 10px;
@@ -146,14 +146,14 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	pointer-events: none;
 }
 .sink div{transition: ease 2.0s;}
-.log2 div{transform: translateY(-26rem)scale(3.5,3.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
+.log2 div{transform: translateY(-40vh)scale(3.5,3.5);} 	/*js:line:299 2021pxまでスクロールで追加*/
 
 #log0{letter-spacing: 0.5rem;}
 .sink h2{width: 100px;}
 .sink h1{width: 100px;}
 /*'depth'と'm'*/
 .depth{
-	font-size: 1.7rem;
+	font-size: 2vh;
 	display: inline-block;
 	opacity: 1;
 	transition: ease 2s;
@@ -190,7 +190,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 	transform: translate(0%,-50%);
 }
 
-/*pc用*/
+/*画像pc用*/
 .img_pc {
 	display: block;
 }
@@ -213,12 +213,12 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
         	top: 90%;
     	}
 	.depth{
-		font-size: 1.5rem;
+		font-size: 2vh;
        		margin-right: 0rem;
 	    	margin-left: 0rem;
 	}
 	.log2 div{
-		transform: translateY(-40rem);
+		transform: translateY(-50vh);
 	}
     	#concept {
 		width: 70%;
@@ -235,7 +235,7 @@ body{height: 4200px; background-color: #000000;font-family:YuMincho, "Yu Mincho"
 		transform: translate(-50%,-50%);
 	}
 	.info {
-		width: 80%;
+		width: 60%;
 	}
-	.infoS {transform: translate(-50%,-25%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
+	.infoS {transform: translate(-50%,-90%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }

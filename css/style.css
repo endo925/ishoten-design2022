@@ -116,7 +116,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	transform: translateY(-50%); 
 }
 .ishouten img{transition: ease 2.0s;}	/*2秒かけて動く*/
-.ishoutenS img{transform: translateY(-15rem)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
+.ishoutenS img{transform: translateY(-20vh)scale(1.5,1.5);}	/*上に50px移動、1.5倍拡大 1900pxまでスクロールすると追加される js:line:296*/
 
 /*開催概要 html:line:27~32*/
 .info{
@@ -124,7 +124,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	top: 87%;
 	left: 50%;
 	position: fixed;
-	width: 45%;
+	width: 60%;
     	transform: translate(-50%, 0);
 }
 .info {transition: ease 2.0s;opacity: 0;filter: blur(8px);letter-spacing: 5px;}	/*2秒掛けでぼかしが消え、100px上に移動*/	
@@ -164,7 +164,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	transition: ease 2s;
 	margin-right: 2.5rem;
 	margin-left: 2.5rem;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
 	font-weight: 100;
 }
 .depout h1{opacity:0;} 	/*js:line:301 2021pxスクロールで'depth'と'm'を消す*/
@@ -214,7 +214,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 		display: block;
 	}
 	.ishouten img{
-		width: 15rem;
+		width: 20vh;
 	}
     	.sink{
         	top: 90%;
@@ -226,6 +226,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	}
 	.log2 div{
 		transform: translateY(-50vh);
+		scale(1.5, 1.5);
 	}
     	#concept {
 		width: 70%;
@@ -240,9 +241,6 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 		top: 50%;
     		left: 50%;
 		transform: translate(-50%,-50%);
-	}
-	.info {
-		width: 60%;
 	}
 	.infoS {transform: translate(-50%,-90%); opacity:1;filter: blur(0px);} 			/*js:line:304 2250pxまでスクロールで追加*/
 }

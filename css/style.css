@@ -216,6 +216,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	.ishouten img{
 		width: 20vh;
 	}
+	.ishoutenS img{transform: translateY(-24vh)scale(1.5,1.5);}
     	.sink{
         	top: 90%;
     	}

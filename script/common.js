@@ -32,7 +32,6 @@ let countDown=()=>{document.getElementById('log0').textContent =-count--;}//-100
 if (window.performance.navigation.type === 1) {
 	test();
 	canSc();
-	scrollTo(0,0);
 	var b = document.getElementsByTagName('body');
 	b.scrollTop = 0;
 } else {

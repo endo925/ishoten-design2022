@@ -62,9 +62,6 @@ window.addEventListener('scroll', ()=>{
 	if (document.scrollingElement.scrollTop < 0) {
 		scrollTop = 0;
 	}
-	if (document.scrollingElement.scrollTop > 2022) {
-		scrollTop = 2022;
-	}
 	log0.textContent = scrollTop;	//文字起こし
 	
 	

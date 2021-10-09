@@ -220,8 +220,8 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
     	}
 	.depth{
 		font-size: 2vh;
-       		margin-right: 0rem;
-	    	margin-left: 0rem;
+       		margin-right: 1rem;
+	    	margin-left: 1rem;
 	}
 	.log2 div{
 		transform: translateY(-46vh)scale(2, 2);

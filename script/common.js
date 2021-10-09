@@ -100,7 +100,7 @@ window.addEventListener('scroll', ()=>{
 	z_index11.style.opacity =1;
 	z_index11.style.filter = "none";
 
-	if(scrollTopC>=0&&scrollTopC<1400){
+	if(scrollTopC>=0&&scrollTopC<1000){
 		z_index11.style.display = '';//表示
 		if(scrollTopC<150){
 			z_index11.style.opacity =scrollTopC/350;
@@ -120,14 +120,14 @@ window.addEventListener('scroll', ()=>{
 		
 	
 	//what
-	let scrollTopW = scrollTop-750;
+	let scrollTopW = scrollTop-950;
 	let y = (scrollTopW+750)*0.001;
 	function wha(y){return -10*y+10;}
 	let yd = wha(y);
 	z_index5.style.opacity =1;
 	z_index5.style.filter = "none";
 	
-	if(scrollTopW>=0&&scrollTopW<1400){
+	if(scrollTopW>=0&&scrollTopW<900){
 		z_index5.style.display = '';
 		if(scrollTopW<150){
 			z_index5.style.opacity =scrollTopW/350;

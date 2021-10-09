@@ -103,7 +103,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 #z-index0{z-index: 0;}/*開始概要*/
 #z-index1{z-index: 1;}/*意匠展ロゴ*/
 #z-index5{z-index: 5;}/*what*/
-#z-index11{z-index: 11;will-change: filter;pointer-events: none;}
+#z-index11{z-index: 11;}
 
 /*意匠展ロゴ*/
 .ishouten img{width: 30vh;}

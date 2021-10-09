@@ -91,7 +91,7 @@ window.addEventListener('scroll', ()=>{
 	}
 	
 	
-	//what
+	//concept
 	let scrollTopC = scrollTop-200;
 	let x = (scrollTopC+750)*0.001;
 	function con(x){return -10*x+10;}
@@ -99,7 +99,7 @@ window.addEventListener('scroll', ()=>{
 	z_index11.style.opacity =1;
 	z_index11.style.filter = "none";
 
-	if(scrollTopC>=0&&scrollTopC<1000){
+	if(scrollTopC>=0&&scrollTopC<1400){
 		z_index11.style.display = '';//表示
 		if(scrollTopC<150){
 			z_index11.style.opacity =scrollTopC/350;
@@ -118,15 +118,15 @@ window.addEventListener('scroll', ()=>{
 
 		
 	
-	//concept
-	let scrollTopW = scrollTop-950;
+	//what
+	let scrollTopW = scrollTop-750;
 	let y = (scrollTopW+750)*0.001;
 	function wha(y){return -10*y+10;}
 	let yd = wha(y);
 	z_index5.style.opacity =1;
 	z_index5.style.filter = "none";
 	
-	if(scrollTopW>=0&&scrollTopW<900){
+	if(scrollTopW>=0&&scrollTopW<1400){
 		z_index5.style.display = '';
 		if(scrollTopW<150){
 			z_index5.style.opacity =scrollTopW/350;
@@ -151,7 +151,7 @@ window.addEventListener('scroll', ()=>{
 	
 	if(scrollTop>1900){
 		z_index1.classList.add('ishoutenS');
-		var rep = setTimeout(scroll,0);		//0m秒毎に自動スクロール繰り返し
+		var rep = setTimeout(scroll,1);		//0m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
 			log.classList.add('log2');
 			log0.textContent = 2022;

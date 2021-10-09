@@ -149,7 +149,7 @@ window.addEventListener('scroll', ()=>{
 	
 	if(scrollTop>1900){
 		z_index1.classList.add('ishoutenS');
-		var rep = setTimeout(scroll,1);		//0m秒毎に自動スクロール繰り返し
+		var rep = setTimeout(scroll,50);		//50m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
 			log.classList.add('log2');
 			log0.textContent = 2022;
@@ -157,7 +157,7 @@ window.addEventListener('scroll', ()=>{
 		}
 		if(scrollTop>2250){
 			z_index0.classList.add('infoS');
-			clearTimeout(rep);			//自動スクロール停止
+			//clearTimeout(rep);			//自動スクロール停止
 		}
 	}
 	else{

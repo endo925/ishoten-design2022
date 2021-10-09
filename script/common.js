@@ -59,8 +59,11 @@ const log = document.getElementById('log');	//scroll:0
 //スクロールされた時に実行
 window.addEventListener('scroll', ()=>{
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
-	if (document.scrollingElement.scrollTop > 2021) {
-		scrollTop = 2021;
+	if (document.scrollingElement.scrollTop < 0) {
+		scrollTop = 0;
+	}
+	if (document.scrollingElement.scrollTop > 2022) {
+		scrollTop = 2022;
 	}
 	log0.textContent = scrollTop;	//文字起こし
 	

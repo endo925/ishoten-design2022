@@ -19,8 +19,6 @@ let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
 if (window.performance.navigation.type === 1) {	//リロード時
 	test();
 	canSc();
-	var b = document.getElementsByTagName('body');
-	b.scrollTop = 0;
 } else {	//リロード以外のページ読み込み時
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{

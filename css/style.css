@@ -153,7 +153,11 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 .sink div{transition: ease 2.0s;}
 .log2 div{transform: translateY(-36vh)scale(3.5,3.5);} 	/*2021pxまでスクロールで追加*/
 
-#log0{letter-spacing: 0.5rem;}
+#log0{
+	margin-right: 2.5rem;
+	margin-left: 2.5rem;
+	letter-spacing: 0.5rem;
+}
 .sink h2{width: 100px;}
 .sink h1{width: 100px;}
 /*'depth'と'm'*/
@@ -162,8 +166,6 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	display: inline-block;
 	opacity: 1;
 	transition: ease 2s;
-	margin-right: 2.5rem;
-	margin-left: 2.5rem;
 	letter-spacing: 0.2rem;
 	font-weight: 100;
 }
@@ -223,10 +225,9 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
        		margin-right: 1rem;
 	    	margin-left: 1rem;
 	}
-	.depth_D{margin-right: 1.5rem;}
-	.depth_m{margin-left: 0.5rem;}
+	.depth_m{margin-left: -3rem;}
 	.log2 div{
-		transform: translateY(-46vh)scale(2, 2);
+		transform: translate(-3vw,-46vh)scale(2, 2);
 	}
 	/*concept, what*/
     	#concept {

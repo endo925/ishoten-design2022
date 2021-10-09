@@ -5,28 +5,23 @@ const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: fal
 noSc();
 
 const test=()=>{
-'use strict';
 		//ここでローディング画像を表示していたDIVを非表示にする
 		document.getElementById('load').classList.add('fade');
 		//ここで本体を表示にさせる
 		document.getElementById('input').style.display = 'block';
 }
-const canSc=()=>{
-'use strict';document.removeEventListener("mousewheel",noScroll,{ passive: false });}//スクロール禁止を消す関数
+const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: false });}//スクロール禁止を消す関数
 
 const log0 =document.getElementById('log0');
 let count = 100;
-let countDown=()=>{
-'use strict';log0.textContent =-count--;}//-100からカウントダウン
+let countDown=()=>{log0.textContent =-count--;}//-100からカウントダウン
 
-if (window.performance.navigation.type === 1) {
-'use strict';	//リロード時
+if (window.performance.navigation.type === 1) {	//リロード時
 	test();
 	canSc();
 	var b = document.getElementsByTagName('body');
 	b.scrollTop = 0;
-} else {
-'use strict';	//リロード以外のページ読み込み時
+} else {	//リロード以外のページ読み込み時
 	//50m秒ごとに繰り返し
 	const intervalId = setInterval(() =>{
 		countDown();
@@ -53,13 +48,11 @@ z1_style.transform = "scale( "+0.5+" , "+0.5+" )";	//意匠展縮小
 z_index5.style.display = 'none';
 z_index11.style.display = 'none';
 if(window.innerWidth > window.innerHeight) {	//pc
-'use strict';
 	z_index1.style.opacity = 0.3;
 	z_index1.style.transform = "scale( "+0.3+" , "+0.3+" )";
 	z_index1.style.filter = "blur("+10+"px)";
 }
 else{	//スマホ
-'use strict';
 	z_index1.style.opacity = 1;
 	z_index1.style.transform = "scale( "+1+" , "+1+" )";
 }
@@ -67,7 +60,6 @@ const log = document.getElementById('log');	//scroll:0
 
 //スクロールされた時に実行
 window.addEventListener('scroll', ()=>{
-'use strict';
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
 	log0.textContent = scrollTop;	//文字起こし
 	
@@ -80,22 +72,17 @@ window.addEventListener('scroll', ()=>{
 		z_index1.style.filter = "blur("+zd+"px)";
 		z_index1.style.opacity = z;
 		if(z<1){
-'use strict';
 			z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
 	} else {	//スマホ用
-'use strict';
 		let z = (scrollTop+100)*0.01;
 		if(scrollTop>=-15&&scrollTop<400){
-'use strict';
 		z_index1.style.display = '';
 		z_index1.style.transform = "scale( "+z+" , "+z+" )";
 		z_index1.style.filter = "blur("+2*z+"px)";
 		}
-		else if(scrollTop>=400&&scrollTop<1800){
-'use strict';z_index1.style.display = 'none';}
+		else if(scrollTop>=400&&scrollTop<1800){z_index1.style.display = 'none';}
 		else{
-'use strict';
 			z_index1.style.display = '';
 			z_index1.style.filter = "blur("+0+"px)";
 			z_index1.style.opacity = 1;
@@ -115,24 +102,19 @@ window.addEventListener('scroll', ()=>{
 	if(scrollTopC>=0&&scrollTopC<1400){
 		z_index11.style.display = '';//表示
 		if(scrollTopC<150){
-'use strict';
 			z_index11.style.opacity =scrollTopC/350;
 			z_index11.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index11.style.filter = "blur("+xd+"px)";
 		}//150pxは動かない
-		else if(scrollTopC>=150,scrollTopC<250){
-'use strict';z_index11.style.transform = "scale( "+x+" , "+x+" )";}
-		else if(scrollTopC>=250,scrollTopC<650){
-'use strict';z_index11.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopC>=150,scrollTopC<250){z_index11.style.transform = "scale( "+x+" , "+x+" )";}
+		else if(scrollTopC>=250,scrollTopC<650){z_index11.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-'use strict';
 			x = (scrollTopC-550)*0.01;
 			z_index11.style.transform = "scale( "+x+" , "+x+" )";
 			z_index11.style.filter = "blur("+2*x+"px)";
 		}
 	}
-	else{
-'use strict';z_index11.style.display = 'none';}//コンセプト消す
+	else{z_index11.style.display = 'none';}//コンセプト消す
 
 		
 	
@@ -145,53 +127,42 @@ window.addEventListener('scroll', ()=>{
 	z_index5.style.filter = "none";
 	
 	if(scrollTopW>=0&&scrollTopW<1400){
-'use strict';
 		z_index5.style.display = '';
 		if(scrollTopW<150){
-'use strict';
 			z_index5.style.opacity =scrollTopW/350;
 			z_index5.style.transform = "scale( "+0.9+" , "+0.9+" )";
 			z_index5.style.filter = "blur("+yd+"px)";
 		}//150pxは動かない
 		else if(scrollTopW>=150,scrollTopW<250){
-'use strict';
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 		}
-		else if(scrollTopW>=250,scrollTopW<650){
-'use strict';z_index5.style.transform = "scale( "+1+" , "+1+" )";}
+		else if(scrollTopW>=250,scrollTopW<650){z_index5.style.transform = "scale( "+1+" , "+1+" )";}
 		else{
-'use strict';
 			y = (scrollTopW-550)*0.01;
 			z_index5.style.transform = "scale( "+y+" , "+y+" )";
 			z_index5.style.filter = "blur("+2*y+"px)";
 		}
 	}
-	else{
-'use strict';z_index5.style.display = 'none';}
+	else{z_index5.style.display = 'none';}
 	
 	//意匠展、開催概要
 	const M = document.getElementById("M");
-	const scroll=()=>{
-'use strict';window.scrollBy(0, 1);} 	//y軸1ずつ自動スクロール
+	const scroll=()=>{window.scrollBy(0, 1);} 	//y軸1ずつ自動スクロール
 	
 	if(scrollTop>1900){
-'use strict';
 		z_index1.classList.add('ishoutenS');
 		var rep = setTimeout(scroll,0);		//0m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
-'use strict';
 			log.classList.add('log2');
 			log0.textContent = 2022;
 			M.classList.add("depout");
 		}
 		if(scrollTop>2250){
-'use strict';
 			z_index0.classList.add('infoS');
 			clearTimeout(rep);			//自動スクロール停止
 		}
 	}
 	else{
-'use strict';
 		log.classList.remove('log2');
 		z_index1.classList.remove('ishoutenS');
 		z_index0.classList.remove('infoS');

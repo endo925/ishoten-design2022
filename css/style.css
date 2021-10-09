@@ -227,7 +227,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	}
 	.depth_m{margin-left: -3vw;}
 	.log2 div{
-		transform: translate(-3vw,-46vh)scale(2, 2);
+		transform: translate(-5vw,-46vh)scale(2, 2);
 	}
 	/*concept, what*/
     	#concept {

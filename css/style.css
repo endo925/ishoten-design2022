@@ -131,7 +131,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 .infoS {transform: translate(-50%,-27vh); opacity:1;filter: blur(0px);} 			/*2250pxまでスクロールで追加*/	
 
 .sns img{
-	height: 4vh; margin: 10px;
+	height: 4vh; margin: 15px;
 	bottom:10%;
 }
 .sns{
@@ -244,5 +244,5 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	.info{
 		width: 60%;
 	}
-	.infoS {transform: translate(-50%,-150%); opacity:1;filter: blur(0px);}
+	.infoS {transform: translate(-50%,-160%); opacity:1;filter: blur(0px);}
 }

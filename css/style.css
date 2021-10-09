@@ -210,7 +210,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	}
 	/*意匠展ロゴ*/
 	.ishouten img{
-		width: 20vh;
+		width: 40vw;
 	}
 	.ishoutenS img{transform: translateY(-24vh)scale(1.5,1.5);}
 	/*depth*/

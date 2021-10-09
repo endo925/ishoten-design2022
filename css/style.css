@@ -145,17 +145,17 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	position: fixed;
 	text-align: center;
 	transform: translate(-50%, -50%);
-	left: 50.5%;
+	left: 50%;
 	top: 85%;
 	width: 100%;
 	pointer-events: none;
 }
 .sink div{transition: ease 2.0s;}
-.log2 div{transform: translateY(-36vh)scale(3.5,3.5);} 	/*2021pxまでスクロールで追加*/
+.log2 div{transform: translateY(0.5vw,-36vh)scale(3.5,3.5);} 	/*2021pxまでスクロールで追加*/
 
 #log0{
-	margin-right: 2.5rem;
-	margin-left: 2.5rem;
+	margin-right: 2.5vw;
+	margin-left: 2.5vw;
 	letter-spacing: 0.5rem;
 }
 .sink h2{width: 100px;}
@@ -222,10 +222,10 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
     	}
 	.depth{
 		font-size: 2vh;
-       		margin-right: 1rem;
-	    	margin-left: 1rem;
+       		margin-right: 1vw;
+	    	margin-left: 1vw;
 	}
-	.depth_m{margin-left: -3rem;}
+	.depth_m{margin-left: -3vw;}
 	.log2 div{
 		transform: translate(-3vw,-46vh)scale(2, 2);
 	}

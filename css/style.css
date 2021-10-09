@@ -145,7 +145,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	position: fixed;
 	text-align: center;
 	transform: translate(-50%, -50%);
-	left: 50%;
+	left: 50.5%;
 	top: 85%;
 	width: 100%;
 	pointer-events: none;
@@ -215,6 +215,7 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 	.ishoutenS img{transform: translateY(-24vh)scale(1.5,1.5);}
 	/*depth*/
     	.sink{
+		left: 52%;
         	top: 90%;
     	}
 	.depth{

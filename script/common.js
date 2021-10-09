@@ -62,7 +62,7 @@ window.addEventListener('scroll', ()=>{
 	if (document.scrollingElement.scrollTop < 0) {
 		scrollTop = 0;
 	}
-	log0.textContent = scrollTop;	//文字起こし
+	log0.textContent = Math.floor(scrollTop);	//文字起こし
 	
 	
 	//意匠展

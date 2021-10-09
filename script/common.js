@@ -59,6 +59,9 @@ const log = document.getElementById('log');	//scroll:0
 //スクロールされた時に実行
 window.addEventListener('scroll', ()=>{
 	let scrollTop = document.scrollingElement.scrollTop;	//スクロール量取得
+	if (document.scrollingElement.scrollTop > 2021) {
+		scrollTop = 2021;
+	}
 	log0.textContent = scrollTop;	//文字起こし
 	
 	
@@ -149,7 +152,7 @@ window.addEventListener('scroll', ()=>{
 	
 	if(scrollTop>1900){
 		z_index1.classList.add('ishoutenS');
-		var rep = setTimeout(scroll,50);		//50m秒毎に自動スクロール繰り返し
+		//var rep = setTimeout(scroll,0);		//0m秒毎に自動スクロール繰り返し
 		if(scrollTop>2021){
 			log.classList.add('log2');
 			log0.textContent = 2022;

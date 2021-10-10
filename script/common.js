@@ -1,7 +1,10 @@
 // JavaScript Document
 'use strict';
 const noScroll=(e)=>{e.preventDefault();}//スクロール禁止
-const noSc=()=>{document.addEventListener('mousewheel', noScroll, { passive: false });}
+const noSc=()=>{
+	document.addEventListener('mousewheel', noScroll, { passive: false });
+	document.addEventListener("touchmove", noScroll, { passive: false });
+}
 noSc();
 
 const test=()=>{
@@ -10,7 +13,10 @@ const test=()=>{
 		//ここで本体を表示にさせる
 		document.getElementById('input').style.display = 'block';
 }
-const canSc=()=>{document.removeEventListener("mousewheel",noScroll,{ passive: false });}//スクロール禁止を消す関数
+const canSc=()=>{
+	document.removeEventListener("mousewheel",noScroll,{ passive: false });
+	document.removeEventListener("touchmove",noScroll, { passive: false });
+}//スクロール禁止を消す関数
 
 const log0 =document.getElementById('log0');
 let count = 100;

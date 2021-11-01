@@ -83,12 +83,10 @@ window.addEventListener('scroll', ()=>{
 		} else{z_index1.style.transform = "scale( "+1+" , "+1+" )"}//1/1で止める
 	} else {	//スマホ用
 		let z = (scrollTop+100)*0.01;
-		function f(z){return -z+1;}
-		let zd = f(z);
 		if(scrollTop>=-15&&scrollTop<400){
 		z_index1.style.display = '';
 		z_index1.style.transform = "scale( "+z+" , "+z+" )";
-		z_index1.style.filter = "blur("+2*zd+"px)";
+		z_index1.style.filter = "blur("+2*z+"px)";
 		}
 		else if(scrollTop>=400&&scrollTop<1800){z_index1.style.display = 'none';}
 		else{

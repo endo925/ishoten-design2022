@@ -75,29 +75,31 @@ body{height: 4200px; background-color: #000000;font-family:Times;}
 
 /*背景*/
 #img{display:none;}
+#img_sp{display:none;}
 @media (min-width: 769px) {
-#img{
-	display:block;
-	position: fixed;
-	background-image: url("../image/メインビジュアル_web_軽量版.jpg");
-	opacity: 0.6;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100vw;
-	height:100vh
+	#img{
+		display:block;
+		position: fixed;
+		background-image: url("../image/メインビジュアル_web_軽量版.jpg");
+		opacity: 0.6;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100vw;
+		height:100vh
+	}
 }
-	#img_sp{display:none;}
-}
-#img_sp{display:block;
-	position: fixed;
-	background-image: url("../image/visual_sp.png");
-	opacity: 0.6;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100vw;
-	height:100vh;
+@media (max-width: 769px){
+	#img_sp{display:block;
+		position: fixed;
+		background-image: url("../image/visual_sp.png");
+		opacity: 0.6;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100vw;
+		height:100vh;
+	}
 }
 /*重ね順*/
 #z-index0{z-index: 0;}/*開始概要*/
